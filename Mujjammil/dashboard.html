@@ -28,5 +28,71 @@
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="side_bar" id="menu" data-aos="fade-right">
+      <div class="content">
+        <button class="a3" onclick="fun()">
+          <i class="fa-sharp fa-solid fa-bars a1" id="a2"></i>
+        </button>
+        <div class="logo">
+          <i class="fa-solid fa-registered" style="font-size: 70px"></i>
+        </div>
+      </div>
+      <ul class="nav_list">
+        <li style="list-style: none">
+          <!-- <a href="#" style="text-decoration:none;">Student</a> -->
+          <input type="button" class="btn" value="Student" />
+          <input type="button" class="btn1" value="Add Staff details" />
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" style="background-color: #522da8">
+          <nav
+            class="navbar navbar-light"
+            style="background-color: #522da8; height: 50px; width: 100%"
+          >
+            <a class="navbar-brand" style="margin-left: 30px" href="#">
+              <!-- <i class="fa-solid fa-user"></i> -->
+            </a>
+            <form class="form-inline">
+              <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <!-- <button
+                class="btn btn-outline-success my-2 my-sm-0 m-5"
+                type="button"
+              >
+                Login
+              </button> -->
+            </form>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12"></div>
+      </div>
+    </div>
+
+    <script>
+      var temp = 0;
+      function fun() {
+        if (temp == 0) {
+          document.getElementById("menu").style.visibility = "visible";
+          temp = 1;
+        } else if (temp == 1) {
+          document.getElementById("menu").style.visibility = "hidden";
+
+          temp = 0;
+        }
+      }
+    </script>
+    <script src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
