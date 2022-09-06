@@ -10,7 +10,7 @@
     <meta name="author" name="Mr.Pink_The_Pink_Lover@143..." />
     <meta name="keywords" content="Login, login, user login,admin login" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form - For Students& Admin</title>
+    <title>Login Form - For Students & Admin</title>
     <link      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
     rel="stylesheet"
   />
@@ -32,7 +32,7 @@
             </a>
             <form class="form-inline">
               <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <button class="btn btn-outline-success my-2 my-sm-0 m-5" type="button">Login</button>
+              <button class="btn btn-outline-success my-2 my-sm-0 m-5" type="button" onclick="fn()">Login</button>
             </form>
           </nav>
         </div>
@@ -40,12 +40,20 @@
     </div>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="form" style="display: none;">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5" style="background-color: #522da8;height: 600px;width: 500px;border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 abs" style="background-color: #522da8;height: 600px;width: 475px;border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
+    
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="#fff">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7 rel" style="background-color: antiquewhite; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
           <div class="row">
+            <div class="col">
+              <div class="rad">
+                <i class="fa-solid fa-user" style="font-size: 50px;padding: 25px; margin-left: 3px;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
             <div class="col">
               <form>
                 <div class="form-floating mb-3">
@@ -69,7 +77,7 @@
                   </label>
                 </div>
               </div>
-              <div class="col-6" style="padding-left: 133px; padding-top: 14px;">
+              <div class="col-6" style="padding-left: 180px; padding-top: 14px;">
                 <a href="#" style="text-decoration: none;">Recover Password!</a>
               </div>
           </div>
@@ -83,14 +91,14 @@
           <div class="row">
             <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
               <a href="#">
-                <button style="background-color: #fff; border: none;outline: none; margin-left: 30px; margin-top: 10px; height: 45px; width: 100%;"
+                <button style="background-color: antiquewhite; border: none;outline: none; margin-left: 30px; margin-top: 10px; height: 45px; width: 100%;"
               type="submit"><i class="fa-brands fa-google-plus-g" style="color: #522da8;"></i><span style="color: #522da8;"> Sign in with google </span></button>
               </a>
             </div>
           </div>
 
           <div class="row">
-            <div class="col" style="padding-left: 160px; padding-top: 20px;">
+            <div class="col" style="padding-left: 200px; padding-top: 30px;">
                 <p>Don't have an account yet?&nbsp;&nbsp;&nbsp;<span><a href="#">Sign Up!</a></span></p>
                 
             </div>
@@ -99,8 +107,8 @@
       </div>
     </div>
 
-    <!-- <button onclick="fn()">click me!</button>
-    <div
+    <!-- <button onclick="fn()">click me!</button> -->
+    <!-- <div
       class="div1"
       id="div2"
       style="
@@ -114,24 +122,22 @@
         <input type="text" /><br />
         <input type="password" />
       </form>
-    </div>
-        <script>
+    </div> -->
+    <script>
+      var temp=0;
       function fn()
       {
-        
-      var temp=0;//teriyathu
         if(temp==0)
         {
-          document.getElementById("div2").style.display="block";
+          document.getElementById("form").style.display="block";
           temp=1;
         }
         else if(temp==1)
         {
-          document.getElementById("div2").style.display="none";
-
+          document.getElementById("form").style.display="none";
           temp=0;
         }
-      } -->
+      }
     </script>
     <scrip src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
   </body>
