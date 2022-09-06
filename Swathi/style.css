@@ -17,31 +17,61 @@ body {
   width: 200px;
   background-color: #522da8;
   padding: 20px;
+  z-index: 1;
+  transition:2s;
 }
 .logo {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
+.a3 {
+  outline: none;
+  border: none;
+  width: 0px;
+  margin-top: -20px;
+  background-color: #522da8;
+  /* color:#fff; */
+}
+
 .btn {
   color: white;
   outline: none;
   border: none;
   background-color: #522da8;
   font-size: 24px;
-  padding-left: 25px;
+  padding-left: 10px;
   /* margin-left: 30px; */
-  margin-top: 70px;
+  margin-top: 60px;
 }
 .btn:hover {
   color: #522da8;
   background-color: aliceblue;
   height: 50px;
-  width: 140px;
+  width: 160px;
   border-radius: 4px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-left: -30px;
 }
 .side_bar .content .a1 {
   margin-left: 140px;
-  font-size:25px;
+  font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .side_bar {
+    /* background-color: lightblue; */
+    visibility: hidden;
+    
+  }
+  .a3 {
+    visibility: visible;
+    margin-left: -150px;
+  }
+}
+@media only screen and (max-width:1000px){
+    .a3{
+        visibility:hidden;
+    }
 }
