@@ -217,9 +217,9 @@
     color: #fff;
   }
   @media only screen and (max-width: 600px) {
-    .div1 {
+    /* .container {
       display: none;
-    }
+    } */
     .username {
       margin-top: -53px;
       margin-left: 230px;
@@ -287,16 +287,16 @@
   }
   @media only screen and (min-width: 600px) {
     .container {
-      margin-left: 300px;
+      /* margin-left: 300px; */
       margin-top: 40px;
-      display: none;
+      /* display: none; */
     }
   }
   @media only screen and (min-width: 900px) {
     .container {
-      margin-left: 250px;
+      /* margin-left: 250px; */
       margin-top: 40px;
-      display: none;
+      /* display: none; */
     }
     .btn {
       outline: none;
@@ -305,7 +305,7 @@
   }
   @media only screen and (min-width: 1000px) {
     .container {
-      margin-left: 250px;
+      /* margin-left: 250px; */
       margin-top: 80px;
     }
   }
