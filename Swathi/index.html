@@ -31,6 +31,8 @@
     />
   </head>
   <body>
+<!-- ---------------------------------side bar ---------------------------------------->
+
     <div class="side_bar" id="menu" data-aos="fade-right">
       <div class="content">
         <button class="a3" onclick="fun()">
@@ -42,12 +44,14 @@
       </div>
       <ul class="nav_list">
         <li style="list-style: none">
-          <!-- <a href="#" style="text-decoration:none;">Student</a> -->
           <input type="button" class="btn" onclick="stu()" value="Student" />
           
         </li>
       </ul>
     </div>
+
+<!-------------------------------navbar----------------------------------------------  -->
+
     <div class="container-fluid nav1">
       <div class="row">
         <div class="col" style="background-color: #522da8">
@@ -55,14 +59,13 @@
             class="navbar navbar-light"
             style="background-color: #522da8; height: 50px; width: 100%"
           >
-            <a class="navbar-brand" style="margin-left: 30px" href="#">
-              <!-- <i class="fa-solid fa-user"></i> -->
-            </a>
             
           </nav>
         </div>
       </div>
     </div>
+
+    <!----------------------------------- Register Form----------------------------------- -->
 
     <div class="container" id="register">
       <div class="row">
@@ -72,30 +75,30 @@
           <form>
             <div class="name">
               <label>Full Name</label><br />
-              <input type="text" placeholder="Enter Your Name "  />
+              <input type="text" placeholder="Enter Your Name " id="name1" />
             </div>
             <div class="username">
               <label>Username</label><br />
-              <input type="text" placeholder="Enter Your Username" /><br />
+              <input type="text" placeholder="Enter Your Username"  id="username1"/><br />
             </div>
 
             <br />
             <div class="email">
               <label>Email</label><br />
-              <input type="email" placeholder="Enter Your Email" />
+              <input type="email" placeholder="Enter Your Email" id="email1" />
             </div>
             <div class="number">
               <label>Phone Number</label><br />
-              <input type="tel" placeholder="Enter Your Number" /><br />
+              <input type="tel" placeholder="Enter Your Number" id="number1" /><br />
             </div>
             <br />
             <div class="password">
               <label>Password</label><br />
-              <input type="password" placeholder="Enter Your Password" />
+              <input type="password" placeholder="Enter Your Password" id="password1" />
             </div>
             <div class="cpass">
               <label>Confirm Password</label><br />
-              <input type="password" placeholder="Confirm Password" /><br />
+              <input type="password" placeholder="Confirm Password" id="cpass1" /><br />
             </div>
             <br />
             <div class="gender">
@@ -104,12 +107,13 @@
               <input type="radio" value="Female" name="r1" /><b>Female</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="radio" value="Others" name="r1" /><b>Others</b><br />
             </div><br>
-            <button class="btn2">Submit</button>
+            <button class="btn2" onclick="sub()">Submit</button>
           </form>
         </div>
       </div>
     </div>
     <script>
+      // -----------------------------------side bar------------------------------------------
       var temp = 0;
       function fun() {
         if (temp == 0) {
@@ -121,6 +125,7 @@
           temp = 0;
         }
       }
+      //------------------------register form------------------------------------------
       var temp1=0;
       function stu()
       {
@@ -132,6 +137,15 @@
 
           temp1 = 0;
         }
+      }
+      // -------------------------------variable values-----------------------------------
+      function sub(){
+        var name1=document.getElementById("name1").value;
+        var username1=document.getElementById("username1").value;
+        var name1=document.getElementById("name1").value;
+        var name1=document.getElementById("name1").value;
+        var name1=document.getElementById("name1").value;
+
       }
     </script>
     <script src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>

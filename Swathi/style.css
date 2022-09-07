@@ -87,10 +87,32 @@ h2 {
   margin-top: -30px;
   padding: 20px;
 }
+:root {
+  --primary: #522da8;
+  --secondary: #ffffff;
+}
 .div1 {
   background-color: #522da8;
   height: 450px;
   width: 300px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: linear-gradient(
+    to bottom right,
+    #522da8,
+    #fff,
+    #522da8,
+    #fff,
+    #522da8,
+    #fff,
+    #522da8,
+    #fff,
+    #522da8,
+    #fff,
+    #522da8,
+    #fff,
+    #522da8
+  );
 }
 .div2 {
   /* background-color: aqua; */
@@ -254,28 +276,26 @@ label {
     margin-left: 25px;
     width: 80%;
   }
-  h2
-  {
-    margin-top:30px;
+  h2 {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 600px) {
   .container {
     margin-left: 300px;
     margin-top: 40px;
-    display:none;
+    display: none;
   }
 }
 @media only screen and (min-width: 900px) {
   .container {
     margin-left: 250px;
     margin-top: 40px;
-    display:none;
+    display: none;
   }
-  .btn
-  {
-    outline:none;
-    border:none;
+  .btn {
+    outline: none;
+    border: none;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -392,9 +412,8 @@ label {
     color: #fff;
   }
 }
-@media only screen and (max-width: 990px)and (min-width:1200px) {
-h2{
-  text-align: center;
-}
-
+@media only screen and (max-width: 990px) and (min-width: 1200px) {
+  h2 {
+    text-align: center;
+  }
 }
