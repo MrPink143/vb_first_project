@@ -63,7 +63,7 @@
                 <a href="#">Add Students Details</a>
               </li>
               <li>
-                <a href="#">Add Staff Details</a>
+                <a href="#" onclick="fn()">Add Staff Details</a>
               </li>
               <!-- <li>
                 <a href="#">Home 3</a>
@@ -127,7 +127,7 @@
               <i class="fas fa-align-left"></i>
               <!-- <span>Toggle Sidebar</span> -->
             </button>
-            <button
+            <!-- <button
               class="btn btn-dark d-inline-block d-lg-none ml-auto"
               type="button"
               data-toggle="collapse"
@@ -137,7 +137,7 @@
               aria-label="Toggle navigation"
             >
               <i class="fas fa-align-justify"></i>
-            </button>
+            </button> -->
 
             <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
@@ -160,7 +160,7 @@
 
         <div
           class="container"
-          style="display: block; background-color: #522da8; border-radius: 10px"
+          style="display: none; background-color: #522da8; border-radius: 10px"
           id="add"
         >
           <div class="row">
@@ -251,16 +251,16 @@
               </div>
               <div class="row">
                 <div
-                  class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 offset-xs-3 offset-sm-3 offset-md-3 offset-lg-3 offset-xl-3 mt-4"
+                  class="col-xs-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 offset-4 offset-xs-4 offset-sm-4 offset-md-4 offset-lg-4 offset-xl-4 mt-3"
                 >
                   <button
                     type="submit"
-                    class="button"
+                    class="button1"
                     style="
                       outline: none;
                       border: none;
                       height: 55px;
-                      width: 100%;
+                      width: 50%;
                     "
                   >
                     Login
@@ -273,6 +273,18 @@
       </div>
     </div>
 
+    <script>
+      var temp = 0;
+      function fn() {
+        if (temp == 0) {
+          document.getElementById("add").style.display = "block";
+          temp = 1;
+        } else if (temp == 1) {
+          document.getElementById("add").style.display = "none";
+          temp = 0;
+        }
+      }
+    </script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
