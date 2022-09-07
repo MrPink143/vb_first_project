@@ -3,11 +3,16 @@
   box-sizing: border-box;
   padding: 0;
 }
+.nav1
+{
+  position:fixed;
+  top:0;
+}
 body {
   position: relative;
   min-width: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .side_bar {
   position: fixed;
@@ -74,8 +79,8 @@ body {
   }
 }
 .container {
-  margin-left: 250px;
-  margin-top: 55px;
+  /* margin-left: 250px; */
+  /* margin-top: 55px; */
   padding: 20px;
   /* background-color: greenyellow; */
 }
@@ -93,30 +98,30 @@ h2 {
   padding: 30px;
 }
 .name {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .username {
   margin-top: -53px;
-  margin-left: 400px;
+  margin-left: 320px;
 }
 .email {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .number {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: -53px;
-  margin-left: 400px;
+  margin-left: 320px;
 }
 .password {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .cpass {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: -53px;
-  margin-left: 400px;
+  margin-left: 320px;
 }
 .gender {
-  margin-left: 150px;
+  margin-left: 110px;
 }
 .name input {
   outline: none;
@@ -177,11 +182,95 @@ label {
 }
 .btn2 {
   height: 50px;
-  width: 100%;
-  margin-left: 50px;
+  width: 90%;
+  margin-left: 20px;
   border: none;
   outline: none;
   background-color: #522da8;
   border-radius: 5px;
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .div1 {
+    visibility: hidden;
+  }
+  .username {
+    margin-top: -53px;
+    margin-left: 230px;
+  }
+  .number {
+    margin-top: -53px;
+    margin-left: 230px;
+  }
+  .cpass {
+    margin-top: -53px;
+    margin-left: 230px;
+  }
+  .name input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .username input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .email input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .password input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .cpass input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .number input {
+    outline: none;
+    border: none;
+    border: 1px solid #522da8;
+    height: 30px;
+    width: 200px;
+  }
+  .gender {
+    margin-left: 30px;
+  }
+  .btn2 {
+    margin-left: 25px;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container{
+    margin-left:300px;
+    margin-top:40px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container{
+    margin-left:250px;
+    margin-top:40px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container{
+    margin-left:250px;
+    margin-top:80px;
+  }
 }
