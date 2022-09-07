@@ -43,7 +43,7 @@
       <ul class="nav_list">
         <li style="list-style: none">
           <!-- <a href="#" style="text-decoration:none;">Student</a> -->
-          <input type="button" class="btn" value="Student" />
+          <input type="button" class="btn" onclick="stu()" value="Student" />
           
         </li>
       </ul>
@@ -64,10 +64,10 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="register">
       <div class="row">
         <div class="col-xl-5  div1"></div>
-        <div class="col-xl-7  div2">
+        <div class="col-xl-7  div2" >
           <h2><center>Register Form</center></h2><br>
           <form>
             <div class="name">
@@ -119,6 +119,18 @@
           document.getElementById("menu").style.visibility = "hidden";
 
           temp = 0;
+        }
+      }
+      var temp1=0;
+      function stu()
+      {
+        if (temp1 == 0) {
+          document.getElementById("register").style.display = "block";
+          temp1 = 1;
+        } else if (temp1 == 1) {
+          document.getElementById("register").style.display = "none";
+
+          temp1 = 0;
         }
       }
     </script>
