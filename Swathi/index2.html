@@ -23,8 +23,6 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style2.css" />
 
-    <!-- <link rel="stylesheet" href="./index1.css" /> -->
-
     <!-- Font Awesome JS -->
     <script
       defer
@@ -57,12 +55,8 @@
               <li>
                 <a href="#" onclick="stu()">Student</a>
               </li>
-              <!-- <li>
-                <a href="#">Add Staff Details</a>
-              </li> -->
             </ul>
           </li>
-          
         </ul>
       </nav>
 
@@ -74,67 +68,142 @@
               <i class="fas fa-align-left"></i>
               <!-- <span>Toggle Sidebar</span> -->
             </button>
-            <!-- <button
-              class="btn btn-dark d-inline-block d-lg-none ml-auto"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-align-justify"></i>
-            </button> -->
           </div>
         </nav>
 
-        <div class="container" style="display: none;" id="register">
-            <div class="row">
-              <div class="col-xl-5  div1"></div>
-              <div class="col-xl-7  div2" >
-                <h2><center>Register Form</center></h2><br>
-                <form>
-                  <div class="name">
-                    <label>Full Name</label><br />
-                    <input type="text" placeholder="Enter Your Name " id="name1" />
-                  </div>
-                  <div class="username">
-                    <label>Username</label><br />
-                    <input type="text" placeholder="Enter Your Username"  id="username1"/><br />
-                  </div>
-      
-                  <br />
-                  <div class="email">
-                    <label>Email</label><br />
-                    <input type="email" placeholder="Enter Your Email" id="email1" />
-                  </div>
-                  <div class="number">
-                    <label>Phone Number</label><br />
-                    <input type="tel" placeholder="Enter Your Number" id="number1" /><br />
-                  </div>
-                  <br />
-                  <div class="password">
-                    <label>Password</label><br />
-                    <input type="password" placeholder="Enter Your Password" id="password1" />
-                  </div>
-                  <div class="cpass">
-                    <label>Confirm Password</label><br />
-                    <input type="password" placeholder="Confirm Password" id="cpass1" /><br />
-                  </div>
-                  <br />
-                  <div class="gender">
-                    <label>Gender :</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="Male" name="r1" /><b>Male</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" value="Female" name="r1" /><b>Female</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" value="Others" name="r1" /><b>Others</b><br />
-                  </div><br>
-                  <button class="btn2" onclick="sub()">Submit</button>
-                </form>
-              </div>
+        <div class="container" id="register">
+          <div class="heading">
+            <h2>Register Form</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-lg-5 col-sm-12 col-xs-12 col-xxl-5 div1">
+              <!-- <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">Registeration Form</h2> -->
+            </div>
+            <div
+              class="col-md-8 col-lg-7 col-sm-12 col-xs-12 col-xxl-12 div2 p-5"
+            >
+              <form class="form" id="form">
+                <div class="form_control">
+                  <!-- <label>UserName</label> -->
+                  <input
+                    type="text"
+                    id="username"
+                    autocomplete="off"
+                    required
+                  />
+                  <span>UserName</span>
+                  <!-- <i class="fa-check-circle"></i> -->
+                  <!-- <p id="error"></p> -->
+                  <small id="s1"></small>
+                </div>
+
+                <div class="form_control">
+                  <!-- <label>Email</label> -->
+                  <input type="email" id="email" autocomplete="off" required />
+                  <span>Email</span>
+                  <!-- <i class="fa-check-circle"></i> -->
+                  <small id="s2"></small>
+                </div>
+
+                <div class="form_control">
+                  <!-- <label>Password</label> -->
+                  <input
+                    type="password"
+                    id="pass"
+                    autocomplete="off"
+                    required
+                  />
+                  <span>Password</span>
+                  <!-- <i class="fa-check-circle"></i> -->
+                  <small id="s3"></small>
+                </div>
+
+                <div class="form_control">
+                  <!-- <label>Confirm Password</label> -->
+                  <input
+                    type="password"
+                    id="cpass"
+                    autocomplete="off"
+                    required
+                  />
+                  <span>Confirm Password</span>
+                  <!-- <i class="fa-check-circle"></i> -->
+                  <small id="s4"></small>
+                </div>
+
+                <div class="form_control">
+                  <!-- <label>Phone No</label> -->
+                  <input type="tel" id="number" autocomplete="off" required />
+                  <span>Phone No</span>
+                  <!-- <i class="fa-check-circle"></i> -->
+                  <!-- <p id="error"></p> -->
+                  <small id="s5"></small>
+                </div>
+                <button onclick="sub()">Submit</button>
+              </form>
             </div>
           </div>
+        </div>
+      </div>
     </div>
 
+    <script>
+      // function sub1() {
+      //   alert("df");
+      //   var name1=document.getElementById("username").value;
+      //   var email1=document.getElementById("email").value;
+      //   var password1=document.getElementById("password").value;
+      //   var cpass1=document.getElementById("cpass").value;
+      //   var number1=document.getElementById("number").value;
+      // }
+      var temp1 = 0;
+      function stu() {
+        if (temp1 == 0) {
+          document.getElementById("register").style.display = "block";
+          temp1 = 1;
+        } else if (temp1 == 1) {
+          document.getElementById("register").style.display = "none";
+
+          temp1 = 0;
+        }
+      }
+      function sub() {
+        var name1 = document.getElementById("username").value;
+        var email1 = document.getElementById("email").value;
+        var password1 = document.getElementById("pass").value;
+        var cpass1 = document.getElementById("cpass").value;
+        var number1 = document.getElementById("number").value;
+
+        if(name1==''){
+          document.getElementById("s1").innerHTML="<br>"+"Enter Your Name";
+          document.getElementById("s1").style.color="red";
+        }
+        if(email1==''){
+          document.getElementById("s2").innerHTML="<br>"+"Enter you Email";
+          document.getElementById("s2").style.color="red";
+        }
+        if(password1==''){
+          document.getElementById("s3").innerHTML="<br>"+"Enter you Password";
+          document.getElementById("s3").style.color="red";
+        }
+        if(cpass1==''){
+          document.getElementById("s4").innerHTML="<br>"+"Enter you Confirm Password";
+          document.getElementById("s4").style.color="red";
+        }
+        if(number1==''){
+          document.getElementById("s5").innerHTML="<br>"+"Enter you Number";
+          document.getElementById("s5").style.color="red";
+        }
+        
+        // alert(document.getElementById("password1").value);
+        // console.log(name1);
+        // console.log(email1);
+        // console.log(password1);
+        // console.log(cpass1);
+        // console.log(number1);
+
+      }
+    </script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -160,20 +229,6 @@
           $("#sidebar").toggleClass("active");
         });
       });
-
-      var temp1=0;
-      function stu()
-      {
-        if (temp1 == 0) {
-          document.getElementById("register").style.display = "block";
-          temp1 = 1;
-        } else if (temp1 == 1) {
-          document.getElementById("register").style.display = "none";
-
-          temp1 = 0;
-        }
-      }
     </script>
   </body>
 </html>
- 
