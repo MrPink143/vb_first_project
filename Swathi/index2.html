@@ -84,47 +84,52 @@
           </div>
           <div class="row">
             <div class=" col-md-4 col-lg-5 col-sm-12 col-xs-12 col-xxl-5  div1">
-
+              <!-- <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">Registeration Form</h2> -->
             </div>
             <div class=" col-md-8 col-lg-7 col-sm-12 col-xs-12 col-xxl-12 div2 p-5">
-                  <form class="form" id="form" onsubmit="return verifyPassword()">
+                  <form class="form" id="form">
                     <div class="form_control">
-                      <label>UserName</label>
-                      <input type="text" placeholder="Name" id="username" autocomplete="off" required/>
-                      <i class="fa-check-circle"></i>
+                      <!-- <label>UserName</label> -->
+                      <input type="text"  id="username" autocomplete="off" required/>
+                      <span>UserName</span>
+                      <!-- <i class="fa-check-circle"></i> -->
                       <!-- <p id="error"></p> -->
-                      <small>Error Message</small> 
+                      <small id="s1"></small> 
                     </div>
             
                     <div class="form_control">
-                      <label>Email</label>
-                      <input type="email" placeholder="dgh@gmail.com" id="email" autocomplete="off" required />
-                      <i class="fa-check-circle"></i>
-                      <small>Error Message</small>
+                      <!-- <label>Email</label> -->
+                      <input type="email"  id="email" autocomplete="off" required />
+                      <span>Email</span>
+                      <!-- <i class="fa-check-circle"></i> -->
+                      <small></small>
                     </div>
             
                     <div class="form_control">
-                      <label>Password</label>
-                      <input type="password" placeholder="Enter Password" id="pass" autocomplete="off" required />
-                      <i class="fa-check-circle"></i>
-                      <small>Error Message</small>
+                      <!-- <label>Password</label> -->
+                      <input type="password"  id="pass" autocomplete="off" required />
+                      <span>Password</span>
+                      <!-- <i class="fa-check-circle"></i> -->
+                      <small></small>
                     </div>
             
                     <div class="form_control">
-                      <label>Confirm Password</label>
-                      <input type="password" placeholder="Confirm Password" id="cpass" autocomplete="off" required />
-                      <i class="fa-check-circle"></i>
-                      <small>Error Message</small>
+                      <!-- <label>Confirm Password</label> -->
+                      <input type="password"  id="cpass" autocomplete="off" required />
+                      <span>Confirm Password</span>
+                      <!-- <i class="fa-check-circle"></i> -->
+                      <small></small>
                     </div>
 
                     <div class="form_control">
-                      <label>Phone No</label>
-                      <input type="tel" placeholder="Name" id="number" autocomplete="off" required/>
-                      <i class="fa-check-circle"></i>
+                      <!-- <label>Phone No</label> -->
+                      <input type="tel"  id="number" autocomplete="off" required/>
+                      <span>Phone No</span>
+                      <!-- <i class="fa-check-circle"></i> -->
                       <!-- <p id="error"></p> -->
-                      <small>Error Message</small> 
+                      <small></small> 
                     </div>
-                    <button >Submit</button>
+                    <button onclick="sub()">Submit</button>
                   </form>
                 </div>
               </div>
@@ -171,76 +176,12 @@
           temp1 = 0;
         }
       }
-
-      const name1=document.getElementById("username");
-      const email=document.getElementById("email");
-      const password=document.getElementById("password");
-      const cpass=document.getElementById("cpass");
-      const number=document.getElementById("number");
-
-      // form.addEventListener('submit', (e) => {
-      //   e.preventDefault();
-      //   check();
-      // });
-      // function check()
-      // {
-
-      //   if(usernamevalue=='')
-      //   {
-      //     setError(username,"Username cannot be blank");
-      //   }
-      //   else
-      //   {
-      //     setSuccess(username);
-      //   }
-
-      //   if(emailvalue=='')
-      //   {
-      //     setError(email,"email cannot be blank");
-      //   }
-      //   else if(!isemail,(emailvalue))
-      //   {
-      //     setError(email,"not a valid email");
-      //   }
-      //   else
-      //   {
-      //     setSuccess(email);
-      //   }
-      // }
-
-      // if(passwordvalue=='')
-      //   {
-      //     setError(password,"password cannot be blank");
-      //   }
-      //   else
-      //   {
-      //     setSuccess(password);
-      //   }
-
-      //   if(cpassvalue=='')
-      //   {
-      //     setError(cpass,"Username cannot be blank");
-      //   }
-      //   else if(passwordvalue!==cpassvalue){
-      //     setError(cpass,"Password Does Not Match")
-      //   }
-      //   else
-      //   {
-      //     setSuccess(password);
-      //   }
-
-      //   function setError(input,message){
-      //     const form_control=input.parentElement;
-      //     const small=form_control.querySelector('small');
-      //     form_control.className='form_control error';
-      //     small.innerText=message;
-      //   }
-
-
-      // function isemail(email){
-      //   return /^[A-Z.a-z.0-9]/$.test(email);
-      // }
-
+      function sub()
+      {
+        var name1=document.getElementById("username").value;
+      }
+      
+      
     </script>
   </body>
 </html>
