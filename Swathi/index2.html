@@ -9,6 +9,17 @@
 
     <!-- Bootstrap CSS CDN -->
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
       integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -71,77 +82,149 @@
           </div>
         </nav>
 
-        <div class="container" id="register">
-          <div class="heading">
-            <h2>Register Form</h2>
-          </div>
+        <div class="form-container " id="register">
           <div class="row">
-            <div class="col-md-4 col-lg-5 col-sm-12 col-xs-12 col-xxl-5 div1">
-              <!-- <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">Registeration Form</h2> -->
-            </div>
             <div
-              class="col-md-8 col-lg-7 col-sm-12 col-xs-12 col-xxl-12 div2 p-5"
+              class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block form-contents"
             >
-              <form class="form" id="form">
-                <div class="form_control">
-                  <!-- <label>UserName</label> -->
-                  <input
-                    type="text"
-                    id="username"
-                    autocomplete="off"
-                    required
-                  />
-                  <span>UserName</span>
-                  <!-- <i class="fa-check-circle"></i> -->
-                  <!-- <p id="error"></p> -->
-                  <small id="s1"></small>
-                </div>
-
-                <div class="form_control">
-                  <!-- <label>Email</label> -->
-                  <input type="email" id="email" autocomplete="off" required />
-                  <span>Email</span>
-                  <!-- <i class="fa-check-circle"></i> -->
-                  <small id="s2"></small>
-                </div>
-
-                <div class="form_control">
-                  <!-- <label>Password</label> -->
-                  <input
-                    type="password"
-                    id="pass"
-                    autocomplete="off"
-                    required
-                  />
-                  <span>Password</span>
-                  <!-- <i class="fa-check-circle"></i> -->
-                  <small id="s3"></small>
-                </div>
-
-                <div class="form_control">
-                  <!-- <label>Confirm Password</label> -->
-                  <input
-                    type="password"
-                    id="cpass"
-                    autocomplete="off"
-                    required
-                  />
-                  <span>Confirm Password</span>
-                  <!-- <i class="fa-check-circle"></i> -->
-                  <small id="s4"></small>
-                </div>
-
-                <div class="form_control">
-                  <!-- <label>Phone No</label> -->
-                  <input type="tel" id="number" autocomplete="off" required />
-                  <span>Phone No</span>
-                  <!-- <i class="fa-check-circle"></i> -->
-                  <!-- <p id="error"></p> -->
-                  <small id="s5"></small>
-                </div>
-                <button onclick="sub()">Submit</button>
-              </form>
+              <h1>form contents</h1>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 p-4 d-block register">
+              <div class="form-header">
+                <h3>Register</h3>
+              </div>
+              <form>
+                <div class="form-ctrl">
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Register Id</span>
+                      <input
+                        type="text"
+                        name="regid"
+                        id="regid"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Student Id</span>
+                      <input
+                        type="text"
+                        name="stuid"
+                        id="stuid"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Name</span>
+                      <input
+                        type="text"
+                        name="SName"
+                        id="SName"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Father Name</span>
+                      <input
+                        type="text"
+                        name="FName"
+                        id="FName"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Date Of Birth</span>
+                    <input type="date" name="dob" id="dob" required style="padding:15px;"/>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Phone Number</span>
+                    <input
+                      type="tel"
+                      name="number"
+                      id="number"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Address</span>
+                    <textarea rows="5" cols="45" id="address" required></textarea>
+                    <!-- <input type="tel" name="dob" id="dob" /> -->
+                   </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Qualification</span>
+                      <input type="text" name="Q1" id="Q1" autocomplete="off" required />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>College Name</span>
+                      <input
+                        type="text"
+                        name="clg"
+                        id="clg"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Cource Name</span>
+                    <input
+                      type="text"
+                      name="cname"
+                      id="cname"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Cource Duration</span>
+                    <input type="month" name="cd" id="cd" required style="padding:15px;" />
+                  </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Batch Timing</span>
+                      <input type="time" name="time" id="time" required style="padding:15px;" />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Date of Joining</span>
+                      <input type="date" name="date" id="date" required style="padding:15px;" />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Total Payment</span>
+                    <input
+                      type="tel"
+                      name="total"
+                      id="total"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Photo</span>
+                    <input type="file" name="photo" id="photo" />
+                  </div>
+                  <button class="btn1 mt-3">Submit</button>
+                </div>
+              </form>
+            </div> 
+          </div>
           </div>
         </div>
       </div>

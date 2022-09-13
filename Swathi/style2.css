@@ -1,10 +1,114 @@
 /*
     DEMO STYLE
 */
+/* Register Form Start */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.div1 {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+/* register form page */
+.form-container {
+  background-color: #dae2fc;
+  border-radius: 8px;
+  height: 90vh;
+  padding: 0.7%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btn1 {
+  outline: none;
+  border: none;
+  margin-top:20px;
+  height: 40px;
+  width: 100%;
+  background-color: #522da8;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.form-contents {
+  background-color: #4f7ad0;
+  height: 580px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form-ctrl-name span {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2%;
+}
+
+.form-ctrl-name input {
+  color: #00176e;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.form-ctrl-name textarea {
+  color: #00176e;
+  height: 95px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: #110c2e26 0px 48px 100px 0px;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.form-container .register {
+  height: 90vh;
+  overflow: auto;
+}
+.a3 {
+  outline: none;
+  /* padding: 10px; */
+  border: none;
+  width: 0px;
+  /* margin-top: -20px; */
+  /* background-color: #522da8; */
+}
+
+i {
+  font-size: 30px;
+  padding: 7px;
+}
+
+@media (max-width: 576px) {
+  .form-contents {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+  /* .form-container .bar {
+    height: 600px;
+  } */
+  /* .nav1 */
+  /* { */
+    /* visibility:hidden; */
+  /* } */
+}
+
+
+/* Register Form End */
+/* .div1 { */
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
-  height: 600px;
+  /* height: 600px;
   animation: changeBackgroundColor 7s infinite;
 
 }
@@ -18,25 +122,10 @@
   }
   100% {
     background: linear-gradient(-135deg, #4158d0,#fff, #c850c0,#fff);
-    /* background-color: #4158d0; */
-  }
-}
-/* * {
-  box-sizing: border-box;
-} */
-/* body {
-  background-color: greenyellow;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-} */
-/* .container {
-  background-color: aliceblue;
-  overflow: hidden;
-} */
+    background-color: #4158d0;
+  } */
+/* }
+
 .container {
   box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.3);
   max-width: 100%;
@@ -46,10 +135,10 @@
 }
 .heading {
   border-bottom: 2px solid white;
-  /* background-color: rgb(150, 59, 236); */
-  padding: 20px 40px;
+  background-color: rgb(150, 59, 236);
+  padding: 20px 40px; */
   
-}
+/* }
 .heading h2 {
   margin: 0;
   text-align: center;
@@ -62,21 +151,18 @@
   padding-bottom: 20px;
   position: relative;
 }
-/* .form_control label {
-  display: inline-block;
-  margin-bottom: 5px;
-} */
+
 .form_control input {
   border: 2px solid gray;
   border-radius: 4px;
   /* display: block; */
-  font-size: 15px;
+  /* font-size: 15px;
   padding: 10px;
   width: 100%;
   outline:none;
   transition:0.5s;
-}
-.form_control span {
+} */
+/* .form_control span {
   position: absolute;
   left: 0;
   padding: 10px;
@@ -91,61 +177,28 @@
   color: #522da8;
   transform: translateX(10px) translateY(-17px);
   font-size: 0.75em;
-  padding: 0 10px;
+  padding: 0 10px; */
   /* background-color: #4158d0; */
   /* border-left: 2px solid #522da8;
   border-right: 2px solid #522da8; */
-  letter-spacing: 0.2em;
-}
-.form_control input:valid,.form_control input:focus{
+  /* letter-spacing: 0.2em; */
+/* } */
+/* .form_control input:valid,.form_control input:focus{
   border: 2px solid #522da8 ;
 }
-/* .form_control input:focus {
-  outline: none;
-  border-color: blueviolet;
-} */
-/* .form_control .success input {
-  border-color: rgb(51, 208, 51);
-}
-.form_control .error input {
-  border-color: red;
-} */
-/* .form_control i {
-  visibility: hidden;
-  position: absolute;
-  top: 40px;
-  right: 10px;
-} */
-/* .form_control .success i.fa-check-circle {
-  color: green;
-  visibility: visible;
-} */
-/* .form_control .error i.fa-exclamation-circle {
-  color: red;
-  visibility: visible;
-} */
-/* .form_control small {
-  color: red;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  visibility: hidden;
-}
-.form_control.error small {
-  visibility: visible;
-} */
+
 .form button {
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0); */
   /* background-color: blueviolet; */
-  border: none;
-  color: white;
-  display: block;
-  font-size: 16px;
-  width: 100%;
-  margin-top: 20px;
+  /* border: none; */
+  /* color: white; */
+  /* display: block; */
+  /* font-size: 16px; */
+  /* width: 100%; */
+  /* margin-top: 20px;
   padding: 10px;
-  border-radius: 5px;
-}
+  border-radius: 5px; */
+/* } */ 
 
 /* .................................................................................... */
 
@@ -153,7 +206,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #fafafa;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 p {
@@ -177,7 +230,8 @@ a:focus {
   background: #fff;
   border: none;
   border-radius: 0;
-  margin-bottom: 40px;
+  margin-top:-20px;
+  margin-bottom: 20px;
   box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.3);
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
 }
