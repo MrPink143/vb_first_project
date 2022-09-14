@@ -18,6 +18,7 @@ body {
 /* register form page */
 .form-container {
   background-color: #dae2fc;
+  display: none;
   border-radius: 8px;
   height: 90vh;
   padding: 0.7%;
@@ -73,7 +74,7 @@ body {
   letter-spacing: 0.5px;
 }
 .form-container .register {
-  height: 90vh;
+  height: 85vh;
   overflow: auto;
 }
 .a3 {
@@ -106,99 +107,7 @@ i {
 
 
 /* Register Form End */
-/* .div1 { */
-  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
-  /* height: 600px;
-  animation: changeBackgroundColor 7s infinite;
 
-}
-@keyframes changeBackgroundColor {
-  0% {
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
-  }
-  50% {
-    background: linear-gradient(-135deg, #4158d0, #c850c0);
-
-  }
-  100% {
-    background: linear-gradient(-135deg, #4158d0,#fff, #c850c0,#fff);
-    background-color: #4158d0;
-  } */
-/* }
-
-.container {
-  box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.3);
-  max-width: 100%;
-  width: 100%;
-  border-radius: 5px;
-  display: none;
-}
-.heading {
-  border-bottom: 2px solid white;
-  background-color: rgb(150, 59, 236);
-  padding: 20px 40px; */
-  
-/* }
-.heading h2 {
-  margin: 0;
-  text-align: center;
-}
-.form {
-  padding: 30px 40px;
-}
-.form_control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.form_control input {
-  border: 2px solid gray;
-  border-radius: 4px;
-  /* display: block; */
-  /* font-size: 15px;
-  padding: 10px;
-  width: 100%;
-  outline:none;
-  transition:0.5s;
-} */
-/* .form_control span {
-  position: absolute;
-  left: 0;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 1em;
-  color: gray;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-.form_control input:valid ~ span,
-.form_control input:focus ~ span {
-  color: #522da8;
-  transform: translateX(10px) translateY(-17px);
-  font-size: 0.75em;
-  padding: 0 10px; */
-  /* background-color: #4158d0; */
-  /* border-left: 2px solid #522da8;
-  border-right: 2px solid #522da8; */
-  /* letter-spacing: 0.2em; */
-/* } */
-/* .form_control input:valid,.form_control input:focus{
-  border: 2px solid #522da8 ;
-}
-
-.form button {
-  background: linear-gradient(-135deg, #c850c0, #4158d0); */
-  /* background-color: blueviolet; */
-  /* border: none; */
-  /* color: white; */
-  /* display: block; */
-  /* font-size: 16px; */
-  /* width: 100%; */
-  /* margin-top: 20px;
-  padding: 10px;
-  border-radius: 5px; */
-/* } */ 
 
 /* .................................................................................... */
 
@@ -231,7 +140,7 @@ a:focus {
   border: none;
   border-radius: 0;
   margin-top:-20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.3);
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
 }
@@ -263,6 +172,7 @@ a:focus {
   min-width: 250px;
   max-width: 250px;
   background: #7386d5;
+  display:hidden;
   color: #fff;
   transition: all 0.3s;
 }

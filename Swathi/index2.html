@@ -50,7 +50,7 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper ">
       <!-- Sidebar  -->
       <nav id="sidebar">
         <ul class="list-unstyled components">
@@ -93,13 +93,13 @@
               <div class="form-header">
                 <h3>Register</h3>
               </div>
-              <form>
+              <form action="" method="">
                 <div class="form-ctrl">
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Register Id</span>
                       <input
-                        type="text"
+                        type="tel"
                         name="regid"
                         id="regid"
                         autocomplete="off"
@@ -111,7 +111,7 @@
                     >
                       <span>Student Id</span>
                       <input
-                        type="text"
+                        type="tel"
                         name="stuid"
                         id="stuid"
                         autocomplete="off"
@@ -220,7 +220,7 @@
                     <span>Photo</span>
                     <input type="file" name="photo" id="photo" />
                   </div>
-                  <button class="btn1 mt-3">Submit</button>
+                  <button class="btn1 mt-3" onclick="submit()">Submit</button>
                 </div>
               </form>
             </div> 
@@ -231,14 +231,8 @@
     </div>
 
     <script>
-      // function sub1() {
-      //   alert("df");
-      //   var name1=document.getElementById("username").value;
-      //   var email1=document.getElementById("email").value;
-      //   var password1=document.getElementById("password").value;
-      //   var cpass1=document.getElementById("cpass").value;
-      //   var number1=document.getElementById("number").value;
-      // }
+      
+
       var temp1 = 0;
       function stu() {
         if (temp1 == 0) {
@@ -250,41 +244,30 @@
           temp1 = 0;
         }
       }
-      function sub() {
-        var name1 = document.getElementById("username").value;
-        var email1 = document.getElementById("email").value;
-        var password1 = document.getElementById("pass").value;
-        var cpass1 = document.getElementById("cpass").value;
-        var number1 = document.getElementById("number").value;
+      
+      function submit(){
+        var register_id=document.getElementById("regid").value;
+        var student_id=document.getElementById("stuid").value;
+        var s_name=document.getElementById("SName").value;
+        var f_name=document.getElementById("FName").value;
+        var dob=document.getElementById("dob").value;
+        var phone=document.getElementById("number").value;
+        var address=document.getElementById("address").value;
+        var Q1=document.getElementById("Q1").value;
+        var clg_name=document.getElementById("clg").value;
+        var c_name=document.getElementById("cname").value;
+        var c_d=document.getElementById("cd").value;
+        var b_time=document.getElementById("time").value;
+        var join_date=document.getElementById("date").value;
+        var total_amt=document.getElementById("total").value;
 
-        if(name1==''){
-          document.getElementById("s1").innerHTML="<br>"+"Enter Your Name";
-          document.getElementById("s1").style.color="red";
+        if(phone.length == 10){
+          alert("number Correct");
         }
-        if(email1==''){
-          document.getElementById("s2").innerHTML="<br>"+"Enter you Email";
-          document.getElementById("s2").style.color="red";
+        else
+        {
+          alert("Only use 10 NUmbers");
         }
-        if(password1==''){
-          document.getElementById("s3").innerHTML="<br>"+"Enter you Password";
-          document.getElementById("s3").style.color="red";
-        }
-        if(cpass1==''){
-          document.getElementById("s4").innerHTML="<br>"+"Enter you Confirm Password";
-          document.getElementById("s4").style.color="red";
-        }
-        if(number1==''){
-          document.getElementById("s5").innerHTML="<br>"+"Enter you Number";
-          document.getElementById("s5").style.color="red";
-        }
-        
-        // alert(document.getElementById("password1").value);
-        // console.log(name1);
-        // console.log(email1);
-        // console.log(password1);
-        // console.log(cpass1);
-        // console.log(number1);
-
       }
     </script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
