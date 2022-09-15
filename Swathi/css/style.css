@@ -72,7 +72,7 @@ body {
   letter-spacing: 0.5px;
 }
 .form-container .register {
-  background-color: transparent;
+  background-color: #dae2fc;
   height: 85vh;
   overflow: auto;
 }
