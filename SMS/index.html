@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration!</title>
+    <title>Student-Registration!</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="html" href="./pages/student_view.html">
     <!-- Font icons -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -20,7 +21,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- Third party css libraries -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
@@ -48,15 +48,19 @@
             <!-- <h2>Main Nav</h2> -->
           </div>
           <!-- Register form -->
-          <div class="row mt-2 mx-1 form-container">
+          <div class="row mt-2 mb-2 mx-1 form-container">
             <div
               class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block form-contents"
             >
-              <h1>form contents</h1>
+              <img
+                src="./images/vb_registration.jpg"
+                alt="vebbox registration"
+                class="img-fluid"
+              />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 p-4 register">
               <div class="form-header">
-                <h3>Register</h3>
+                <h3>Register Here!</h3>
               </div>
               <form method="post" action="./pages/student_view.html">
                 <div class="form-ctrl">
@@ -220,7 +224,7 @@
                     <span>Photo</span>
                     <input type="file" name="photo" id="photo" />
                   </div>
-                  <button class="btn1 mt-5">Submit</button>
+                  <button class="mt-5" onsubmit="submit()">Submit</button>
                 </div>
               </form>
             </div>
@@ -229,6 +233,27 @@
       </div>
     </div>
     <script>
+
+function submit(){
+        var register_id=document.getElementById("regid").value;
+        var student_id=document.getElementById("stuid").value;
+        var s_name=document.getElementById("SName").value;
+        var f_name=document.getElementById("FName").value;
+        var dob=document.getElementById("dob").value;
+        var phone=document.getElementById("number").value;
+        var address=document.getElementById("address").value;
+        var Q1=document.getElementById("Q1").value;
+        var clg_name=document.getElementById("clg").value;
+        var c_name=document.getElementById("cname").value;
+        var c_d=document.getElementById("cd").value;
+        var b_time=document.getElementById("time").value;
+        var join_date=document.getElementById("date").value;
+        var total_amt=document.getElementById("total").value;
+
+      }
+
+
+
       var temp = 0;
       function fun() {
         if (temp == 0) {
