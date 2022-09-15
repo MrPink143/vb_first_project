@@ -65,6 +65,19 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+.form-ctrl-name .dropdown
+{
+  color: #00176e;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px
+}
 
 .form-ctrl-name textarea {
   color: #00176e;

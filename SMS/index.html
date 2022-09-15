@@ -168,13 +168,17 @@
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Name</span>
-                    <input
-                      type="text"
-                      name="cname"
-                      id="cname"
-                      autocomplete="off"
-                      required
-                    />
+                    <select class="dropdown" name="sel1" id="sel1" onchange="change(this.id,'sel2')">
+                      <option>Select Cource</option>
+                      <option value="mern">Mern</option>
+                      <option value="web">Web</option>
+                      <option value="python & advance">Python & Advance</option>
+                      <option value="c &cpp&java">C & Cpp & Java</option>
+                      <option value="hardware">HardWare</option>
+                      <option value="illustrator">illustrator</option>
+                      <option value="photoshop">Photoshop</option>
+                      <option value="basic ms-office">Basic Ms-Office</option>
+                    </select>
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Duration</span>
@@ -189,13 +193,12 @@
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
-                      <input
-                        type="time"
-                        name="time"
-                        id="time"
-                        required
-                        style="padding: 20px"
-                      />
+                      <select class="dropdown" name="sel2" id="sel2">
+                        <!-- <option>M1 (10.00Am to 11.30AM)</option>
+                        <option>M2 (11.30AM to 1.00PM)</option>
+                        <option>M3 (2.30PM to 4.00PM)</option>
+                        <option>M4 (4.00PM to 5.30PM)</option> -->
+                      </select>
                     </div>
                     <div
                       class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
@@ -251,7 +254,15 @@ function submit(){
         var total_amt=document.getElementById("total").value;
 
       }
-
+      function change(s1,s2){
+        var s1=document.getElementById("sel1");
+        var s2=document.getElementById("sel2");
+        s2.innerHTML='';
+        if(s1=="Mern"){
+          var optionArray=['m1(10.00AM to 11.30AM)|M1(10.00AM to 11.30AM)'];
+        }
+        // else()
+      }
 
 
       var temp = 0;
