@@ -27,6 +27,56 @@ body {
   background: #4f7ad0;
 }
 
+/* side bar */
+.side-bar {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: none !important;
+}
+
+.accordion-button {
+  font-size: 0.5em !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 10px 15px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #e7f1ff;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border: none !important;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  padding: 0.8rem !important;
+}
+
+.accordion-body ul {
+  list-style-type: square;
+  margin-bottom: 0.5rem !important;
+}
+
+.accordion-body li a {
+  text-decoration: none;
+  color: #00176e;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
 /* register form page */
 .form-container {
   background-color: #dae2fc;
@@ -65,8 +115,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
-.form-ctrl-name .dropdown
-{
+.form-ctrl-name .dropdown {
   color: #00176e;
   height: 35px;
   width: 100%;
@@ -76,7 +125,7 @@ body {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding-left: 10px;
   font-weight: 400;
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
 }
 
 .form-ctrl-name textarea {
@@ -88,6 +137,7 @@ body {
   border-radius: 5px;
   box-shadow: #110c2e26 0px 48px 100px 0px;
   padding-left: 10px;
+  padding-top: 10px;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
@@ -144,25 +194,26 @@ i {
   font-size: 30px;
   padding: 7px;
 }
-/* .b1 {
-  outline: none;
-  border: none;
-  font-size:large;
-  transition:0.5s;
+.view {
+  background-color: #dae2fc;
+  height: 400px;
+  width: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: ; */
+  /* /* margin-left: 300px; */
 }
-.b1:hover {
-  background-color: #fff;
-  font-size:x-large;
-} */
 @media (max-width: 576px) {
   .form-contents {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 8px;
   }
-  .form-container .bar {
+  /* .form-container .bar {
     height: 500px;
   }
   .nav1 {
     visibility: hidden;
-  }
+  } */
 }
