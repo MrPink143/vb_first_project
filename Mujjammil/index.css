@@ -41,9 +41,6 @@ body {
   right: 16px;
 }
 
-/* .form-floating span {
-  visibility: hidden;
-  position: absolute;
-  top: 23px;
-  right: 16px;
-} */
+.form-floating {
+  position: relative;
+}
