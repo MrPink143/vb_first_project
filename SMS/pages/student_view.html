@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration!</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Font icons -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -22,7 +22,7 @@
     />
 
     <!-- Third party css libraries -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -46,164 +46,22 @@
 
             <!-- <h2>Main Nav</h2> -->
           </div>
-          <!-- Register form -->
-          <div class="row mt-2 mx-1 form-container">
-            <div
-              class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block form-contents"
-            >
-              <h1>form contents</h1>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 p-4 register">
-              <div class="form-header">
-                <h3>Register</h3>
-              </div>
-              <form>
-                <div class="form-ctrl">
-                  <div class="row form-ctrl-name">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <span>Register Id</span>
-                      <input
-                        type="text"
-                        name="regid"
-                        id="regid"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                    <div
-                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
-                    >
-                      <span>Student Id</span>
-                      <input
-                        type="text"
-                        name="stuid"
-                        id="stuid"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="row form-ctrl-name">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <span>Name</span>
-                      <input
-                        type="text"
-                        name="SName"
-                        id="SName"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                    <div
-                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
-                    >
-                      <span>Father Name</span>
-                      <input
-                        type="text"
-                        name="FName"
-                        id="FName"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Date Of Birth</span>
-                    <input type="date" name="dob" id="dob" required />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Phone Number</span>
-                    <input
-                      type="tel"
-                      name="number"
-                      id="number"
-                      autocomplete="off"
-                      required
-                    />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Address</span>
-                    <textarea
-                      rows="5"
-                      cols="45"
-                      id="address"
-                      required
-                    ></textarea>
-                    <!-- <input type="tel" name="dob" id="dob" /> -->
-                  </div>
-                  <div class="row form-ctrl-name">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <span>Qualification</span>
-                      <input
-                        type="text"
-                        name="Q1"
-                        id="Q1"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                    <div
-                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
-                    >
-                      <span>College Name</span>
-                      <input
-                        type="text"
-                        name="clg"
-                        id="clg"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Cource Name</span>
-                    <input
-                      type="text"
-                      name="cname"
-                      id="cname"
-                      autocomplete="off"
-                      required
-                    />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Cource Duration</span>
-                    <input type="month" name="cd" id="cd" required />
-                  </div>
-                  <div class="row form-ctrl-name">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                      <span>Batch Timing</span>
-                      <input type="time" name="time" id="time" required />
-                    </div>
-                    <div
-                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
-                    >
-                      <span>Date of Joining</span>
-                      <input type="date" name="date" id="date" required />
-                    </div>
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Total Payment</span>
-                    <input
-                      type="tel"
-                      name="total"
-                      id="total"
-                      autocomplete="off"
-                      required
-                    />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Photo</span>
-                    <input type="file" name="photo" id="photo" />
-                  </div>
-                  <button class="btn1 mt-5">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
+          <!-- view start -->
+          <label>Register_id</label>
+          <label>student_id</label>
+          <label>Name</label>
+          <label>Father Name</label>
+          <label>student_id</label>
+
+
+          <!-- view End  -->
+          
         </div>
       </div>
     </div>
     <script>
+      
+
       var temp = 0;
       function fun() {
         if (temp == 0) {
