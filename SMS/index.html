@@ -117,7 +117,7 @@
               <div class="form-header">
                 <h3>Register Here!</h3>
               </div>
-              <form method="post" action="./pages/student_view.html">
+              <form>
                 <div class="form-ctrl">
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -223,7 +223,12 @@
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Name</span>
-                    <select class="dropdown" name="sel1" id="sel1" onchange="change(this.id,'sel2')">
+                    <select
+                      class="dropdown"
+                      name="sel1"
+                      id="sel1"
+                      onchange="change(this.id,'sel2')"
+                    >
                       <option>Select Cource</option>
                       <option value="mern">Mern</option>
                       <option value="web">Web</option>
@@ -306,8 +311,10 @@
         var b_time = document.getElementById("time").value;
         var join_date = document.getElementById("date").value;
         var total_amt = document.getElementById("total").value;
+        console.log(s_name);
+        alert(s_name);
       }
-      function change(s1,s2){
+      // function change(s1,s2){
         var s1=document.getElementById("sel1");
         var s2=document.getElementById("sel2");
         s2.innerHTML='';
@@ -319,7 +326,7 @@
 
 
       var temp = 0;
-      function fun() {
+      // function fun() {
         if (temp == 0) {
           document.getElementById("nav").style.visibility = "visible";
           temp = 1;
