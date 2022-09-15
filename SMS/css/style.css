@@ -8,7 +8,23 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  overflow: hidden;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 3px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00176e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f7ad0;
 }
 
 /* register form page */
@@ -20,21 +36,15 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.btn1 {
-  outline: none;
-  border: none;
-  height: 40px;
-  width: 100%;
-  background-color: #522da8;
-  border-radius: 4px;
-  color: #fff;
-}
 
 .form-contents {
-  background-color: #4f7ad0;
-  height: 580px;
+  height: 88vh;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.form-contents img {
+  margin-top: 2.5%;
 }
 
 .form-ctrl-name span {
@@ -55,6 +65,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
 .form-ctrl-name textarea {
   color: #00176e;
   height: 95px;
@@ -67,18 +78,53 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
-.form-container .register {
-  height: 90vh;
-  /* overflow-x: hidden; */
-  overflow: auto;
+
+form button {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  background-color: #00176e;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+
+input::file-selector-button {
+  cursor: pointer;
+  background-color: #00176e;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 1% 4%;
+  margin: 1% 1% 0% 0%;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  width: 25px;
+}
+input[type="month"]::-webkit-calendar-picker-indicator {
+  width: 25px;
+}
+.form-container .register {
+  z-index: 0;
+  height: 88vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
 .a3 {
   outline: none;
-  /* padding: 10px; */
   border: none;
   width: 0px;
-  /* margin-top: -20px; */
-  /* background-color: #522da8; */
 }
 
 i {
@@ -94,8 +140,7 @@ i {
   .form-container .bar {
     height: 500px;
   }
-  .nav1
-  {
-    visibility:hidden;
+  .nav1 {
+    visibility: hidden;
   }
 }
