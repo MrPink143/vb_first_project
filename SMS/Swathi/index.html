@@ -33,6 +33,7 @@
           id="nav"
         >
           <h2>Side Navbar</h2>
+          <!-- <button class="b1 btn btn-primary m-5">Student</button> -->
         </div>
         <!-- Main contents -->
         <div class="col-lg-10">
@@ -57,13 +58,13 @@
               <div class="form-header">
                 <h3>Register</h3>
               </div>
-              <form>
+              <form method="post" action="./pages/student_view.html">
                 <div class="form-ctrl">
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Register Id</span>
                       <input
-                        type="text"
+                        type="tel"
                         name="regid"
                         id="regid"
                         autocomplete="off"
@@ -75,7 +76,7 @@
                     >
                       <span>Student Id</span>
                       <input
-                        type="text"
+                        type="tel"
                         name="stuid"
                         id="stuid"
                         autocomplete="off"
@@ -109,7 +110,13 @@
                   </div>
                   <div class="form-ctrl-name">
                     <span>Date Of Birth</span>
-                    <input type="date" name="dob" id="dob" required />
+                    <input
+                      type="date"
+                      name="dob"
+                      id="dob"
+                      required
+                      style="padding: 20px"
+                    />
                   </div>
                   <div class="form-ctrl-name">
                     <span>Phone Number</span>
@@ -167,18 +174,36 @@
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Duration</span>
-                    <input type="month" name="cd" id="cd" required />
+                    <input
+                      type="month"
+                      name="cd"
+                      id="cd"
+                      required
+                      style="padding: 20px"
+                    />
                   </div>
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
-                      <input type="time" name="time" id="time" required />
+                      <input
+                        type="time"
+                        name="time"
+                        id="time"
+                        required
+                        style="padding: 20px"
+                      />
                     </div>
                     <div
                       class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
                     >
                       <span>Date of Joining</span>
-                      <input type="date" name="date" id="date" required />
+                      <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        required
+                        style="padding: 20px"
+                      />
                     </div>
                   </div>
                   <div class="form-ctrl-name">
