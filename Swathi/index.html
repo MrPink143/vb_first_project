@@ -1,134 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="This page is based on Login to get into our page."
-    />
-    <meta name="author" name="Mr.Pink_The_Pink_Lover@143..." />
-    <meta name="keywords" content="Login, login, user login,admin login" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registeration Form - For Students & Admin</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="./bootstrap-5.1.2-dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Side_nav - Registeration Form</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
-      rel="stylesheet"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./bootstrap-5.1.2-dist/css/bootstrap-reboot.min.css"/>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    
   </head>
+
   <body>
-<!-- ---------------------------------side bar ---------------------------------------->
+    <div class="wrapper ">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a
+              href="#homeSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Click me!</a
+            >
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#" onclick="stu()">Student</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="side_bar" id="menu" data-aos="fade-right">
-      <div class="content">
-        <button class="a3" onclick="fun()">
-          <i class="fa-sharp fa-solid fa-bars a1" id="a2"></i>
-        </button>
-        <div class="logo">
-          <i class="fa-solid fa-registered" style="font-size: 70px"></i>
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <!-- <span>Toggle Sidebar</span> -->
+            </button>
+          </div>
+        </nav>
+
+        <div class="form-container " id="register">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block form-contents"
+            >
+              <h1>form contents</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 p-4 d-block register">
+              <div class="form-header">
+                <h3>Register</h3>
+              </div>
+              <form action="" method="">
+                <div class="form-ctrl">
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Register Id</span>
+                      <input
+                        type="tel"
+                        name="regid"
+                        id="regid"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Student Id</span>
+                      <input
+                        type="tel"
+                        name="stuid"
+                        id="stuid"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Name</span>
+                      <input
+                        type="text"
+                        name="SName"
+                        id="SName"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Father Name</span>
+                      <input
+                        type="text"
+                        name="FName"
+                        id="FName"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Date Of Birth</span>
+                    <input type="date" name="dob" id="dob" required style="padding:15px;"/>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Phone Number</span>
+                    <input
+                      type="tel"
+                      name="number"
+                      id="number"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Address</span>
+                    <textarea rows="5" cols="45" id="address" required></textarea>
+                    <!-- <input type="tel" name="dob" id="dob" /> -->
+                   </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Qualification</span>
+                      <input type="text" name="Q1" id="Q1" autocomplete="off" required />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>College Name</span>
+                      <input
+                        type="text"
+                        name="clg"
+                        id="clg"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Cource Name</span>
+                    <input
+                      type="text"
+                      name="cname"
+                      id="cname"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Cource Duration</span>
+                    <input type="month" name="cd" id="cd" required style="padding:15px;" />
+                  </div>
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Batch Timing</span>
+                      <input type="time" name="time" id="time" required style="padding:15px;" />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Date of Joining</span>
+                      <input type="date" name="date" id="date" required style="padding:15px;" />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Total Payment</span>
+                    <input
+                      type="tel"
+                      name="total"
+                      id="total"
+                      autocomplete="off"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Photo</span>
+                    <input type="file" name="photo" id="photo" />
+                  </div>
+                  <button class="btn1 mt-3" onclick="submit()">Submit</button>
+                </div>
+              </form>
+            </div> 
+          </div>
+          </div>
         </div>
       </div>
-      <ul class="nav_list">
-        <li style="list-style: none">
-          <input type="button" class="btn" onclick="stu()" value="Student" />
-          
-        </li>
-      </ul>
     </div>
 
-<!-------------------------------navbar----------------------------------------------  -->
-
-    <div class="container-fluid nav1">
-      <div class="row">
-        <div class="col" style="background-color: #522da8">
-          <nav
-            class="navbar navbar-light"
-            style="background-color: #522da8; height: 50px; width: 100%"
-          >
-            
-          </nav>
-        </div>
-      </div>
-    </div>
-
-    <!----------------------------------- Register Form----------------------------------- -->
-
-    <div class="container" id="register">
-      <div class="row">
-        <div class="col-xl-5  div1"></div>
-        <div class="col-xl-7  div2" >
-          <h2><center>Register Form</center></h2><br>
-          <form>
-            <div class="name">
-              <label>Full Name</label><br />
-              <input type="text" placeholder="Enter Your Name " id="name1" />
-            </div>
-            <div class="username">
-              <label>Username</label><br />
-              <input type="text" placeholder="Enter Your Username"  id="username1"/><br />
-            </div>
-
-            <br />
-            <div class="email">
-              <label>Email</label><br />
-              <input type="email" placeholder="Enter Your Email" id="email1" />
-            </div>
-            <div class="number">
-              <label>Phone Number</label><br />
-              <input type="tel" placeholder="Enter Your Number" id="number1" /><br />
-            </div>
-            <br />
-            <div class="password">
-              <label>Password</label><br />
-              <input type="password" placeholder="Enter Your Password" id="password1" />
-            </div>
-            <div class="cpass">
-              <label>Confirm Password</label><br />
-              <input type="password" placeholder="Confirm Password" id="cpass1" /><br />
-            </div>
-            <br />
-            <div class="gender">
-              <label>Gender :</label>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="Male" name="r1" /><b>Male</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="radio" value="Female" name="r1" /><b>Female</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="radio" value="Others" name="r1" /><b>Others</b><br />
-            </div><br>
-            <button class="btn2" onclick="sub()">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      // -----------------------------------side bar------------------------------------------
-      var temp = 0;
-      function fun() {
-        if (temp == 0) {
-          document.getElementById("menu").style.visibility = "visible";
-          temp = 1;
-        } else if (temp == 1) {
-          document.getElementById("menu").style.visibility = "hidden";
-
-          temp = 0;
-        }
-      }
-      //------------------------register form------------------------------------------
-      var temp1=0;
-      function stu()
-      {
+      var temp1 = 0;
+      function stu() {
         if (temp1 == 0) {
           document.getElementById("register").style.display = "block";
           temp1 = 1;
@@ -138,20 +228,57 @@
           temp1 = 0;
         }
       }
-      // -------------------------------variable values-----------------------------------
-      function sub(){
-        var name1=document.getElementById("name1").value;
-        var username1=document.getElementById("username1").value;
-        var name1=document.getElementById("name1").value;
-        var name1=document.getElementById("name1").value;
-        var name1=document.getElementById("name1").value;
+      
+      function submit(){
+        var register_id=document.getElementById("regid").value;
+        var student_id=document.getElementById("stuid").value;
+        var s_name=document.getElementById("SName").value;
+        var f_name=document.getElementById("FName").value;
+        var dob=document.getElementById("dob").value;
+        var phone=document.getElementById("number").value;
+        var address=document.getElementById("address").value;
+        var Q1=document.getElementById("Q1").value;
+        var clg_name=document.getElementById("clg").value;
+        var c_name=document.getElementById("cname").value;
+        var c_d=document.getElementById("cd").value;
+        var b_time=document.getElementById("time").value;
+        var join_date=document.getElementById("date").value;
+        var total_amt=document.getElementById("total").value;
 
+        if(phone.length == 10){
+          alert("number Correct");
+        }
+        else
+        {
+          alert("Only use 10 NUmbers");
+        }
       }
     </script>
-    <script src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
     </script>
   </body>
 </html>
