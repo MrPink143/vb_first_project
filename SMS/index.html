@@ -7,7 +7,7 @@
     <title>Student-Registration!</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="html" href="./pages/student_view.html">
+    <link rel="html" href="./pages/student_view.html" />
     <!-- Font icons -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -29,11 +29,66 @@
       <div class="row">
         <!-- Side navbar -->
         <div
-          class="col-lg-2 nav1 d-none d-sm-none d-xs-block d-md-none d-lg-block bg-primary vh-100"
+          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block p-1 vh-100 side-bar"
           id="nav"
+          style="padding: 0"
         >
-          <h2>Side Navbar</h2>
-          <!-- <button class="b1 btn btn-primary m-5">Student</button> -->
+          <img src="" alt="vebbox logo" />
+          <hr style="background-color: #00176e" />
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  student
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="./index.html">Registration</a></li>
+                    <li><a href="#">student details</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  staff
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">add staff details</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Main contents -->
         <div class="col-lg-10">
@@ -55,7 +110,7 @@
               <img
                 src="./images/vb_registration.jpg"
                 alt="vebbox registration"
-                class="img-fluid"
+                class="img-fluid rounded"
               />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 p-4 register">
@@ -233,26 +288,22 @@
       </div>
     </div>
     <script>
-
-function submit(){
-        var register_id=document.getElementById("regid").value;
-        var student_id=document.getElementById("stuid").value;
-        var s_name=document.getElementById("SName").value;
-        var f_name=document.getElementById("FName").value;
-        var dob=document.getElementById("dob").value;
-        var phone=document.getElementById("number").value;
-        var address=document.getElementById("address").value;
-        var Q1=document.getElementById("Q1").value;
-        var clg_name=document.getElementById("clg").value;
-        var c_name=document.getElementById("cname").value;
-        var c_d=document.getElementById("cd").value;
-        var b_time=document.getElementById("time").value;
-        var join_date=document.getElementById("date").value;
-        var total_amt=document.getElementById("total").value;
-
+      function submit() {
+        var register_id = document.getElementById("regid").value;
+        var student_id = document.getElementById("stuid").value;
+        var s_name = document.getElementById("SName").value;
+        var f_name = document.getElementById("FName").value;
+        var dob = document.getElementById("dob").value;
+        var phone = document.getElementById("number").value;
+        var address = document.getElementById("address").value;
+        var Q1 = document.getElementById("Q1").value;
+        var clg_name = document.getElementById("clg").value;
+        var c_name = document.getElementById("cname").value;
+        var c_d = document.getElementById("cd").value;
+        var b_time = document.getElementById("time").value;
+        var join_date = document.getElementById("date").value;
+        var total_amt = document.getElementById("total").value;
       }
-
-
 
       var temp = 0;
       function fun() {
