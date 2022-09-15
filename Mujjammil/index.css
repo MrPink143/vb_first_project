@@ -33,3 +33,14 @@ body {
     border-top-left-radius: 15px; */
   }
 }
+
+.form-floating i {
+  /* visibility: hidden; */
+  position: absolute;
+  top: 23px;
+  right: 16px;
+}
+
+.form-floating {
+  position: relative;
+}
