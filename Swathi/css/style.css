@@ -28,7 +28,7 @@ body {
 .btn1 {
   outline: none;
   border: none;
-  margin-top:20px;
+  margin-top: 20px;
   height: 40px;
   width: 100%;
   background-color: #522da8;
@@ -101,13 +101,11 @@ i {
   } */
   /* .nav1 */
   /* { */
-    /* visibility:hidden; */
+  /* visibility:hidden; */
   /* } */
 }
 
-
 /* Register Form End */
-
 
 /* .................................................................................... */
 
@@ -139,7 +137,7 @@ a:focus {
   background: #fff;
   border: none;
   border-radius: 0;
-  margin-top:-20px;
+  margin-top: -20px;
   margin-bottom: 25px;
   box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.3);
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
@@ -172,7 +170,7 @@ a:focus {
   min-width: 250px;
   max-width: 250px;
   background: #7386d5;
-  display:hidden;
+  display: hidden;
   color: #fff;
   transition: all 0.3s;
 }
