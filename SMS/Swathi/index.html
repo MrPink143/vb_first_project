@@ -7,6 +7,7 @@
     <title>Registration!</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="html" href="./pages/student_view.html">
     <!-- Font icons -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -220,7 +221,7 @@
                     <span>Photo</span>
                     <input type="file" name="photo" id="photo" />
                   </div>
-                  <button class="btn1 mt-5">Submit</button>
+                  <button class="btn1 mt-5" onsubmit="submit()" >Submit</button>
                 </div>
               </form>
             </div>
@@ -229,6 +230,27 @@
       </div>
     </div>
     <script>
+
+function submit(){
+        var register_id=document.getElementById("regid").value;
+        var student_id=document.getElementById("stuid").value;
+        var s_name=document.getElementById("SName").value;
+        var f_name=document.getElementById("FName").value;
+        var dob=document.getElementById("dob").value;
+        var phone=document.getElementById("number").value;
+        var address=document.getElementById("address").value;
+        var Q1=document.getElementById("Q1").value;
+        var clg_name=document.getElementById("clg").value;
+        var c_name=document.getElementById("cname").value;
+        var c_d=document.getElementById("cd").value;
+        var b_time=document.getElementById("time").value;
+        var join_date=document.getElementById("date").value;
+        var total_amt=document.getElementById("total").value;
+
+      }
+
+
+
       var temp = 0;
       function fun() {
         if (temp == 0) {
