@@ -85,7 +85,16 @@ i {
   font-size: 30px;
   padding: 7px;
 }
-
+/* .b1 {
+  outline: none;
+  border: none;
+  font-size:large;
+  transition:0.5s;
+}
+.b1:hover {
+  background-color: #fff;
+  font-size:x-large;
+} */
 @media (max-width: 576px) {
   .form-contents {
     border-bottom-left-radius: 0px;
@@ -94,8 +103,7 @@ i {
   .form-container .bar {
     height: 500px;
   }
-  .nav1
-  {
-    visibility:hidden;
+  .nav1 {
+    visibility: hidden;
   }
 }
