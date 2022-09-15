@@ -44,3 +44,11 @@ body {
 .form-floating {
   position: relative;
 }
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #eee;
+}
