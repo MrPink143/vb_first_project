@@ -31,7 +31,6 @@ body {
 /* side bar */
 .side-bar {
   background-color: #ffffff;
-  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
   box-shadow: 7px 0 60px rgb(0 0 0 / 5%);
 }
 
@@ -79,6 +78,52 @@ body {
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 0.6px;
+}
+
+/* main navbar */
+.main-navbar {
+  background-color: #fff;
+  padding: 1%;
+  box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
+    0 0.9375rem 1.40625rem rgb(4 9 20 / 3%),
+    0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.main-navbar-user span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.main-navbar-menu {
+  text-align: right;
+}
+
+.main-navbar-menu ul {
+  margin-bottom: 0;
+}
+
+.main-navbar-menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 2.5%;
+}
+
+.main-navbar-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 2%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.main-navbar-menu img {
+  width: 25px;
+  border-radius: 50%;
 }
 
 /* register form page */
@@ -168,8 +213,6 @@ form button {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.7px;
-  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
   box-shadow: 0 0.125rem 0.625rem rgb(63 106 216 / 40%),
     0 0.0625rem 0.125rem rgb(63 106 216 / 50%);
 }
@@ -189,14 +232,6 @@ input::file-selector-button {
   letter-spacing: 0.7px;
 }
 
-/* input[type="date"]::-webkit-calendar-picker-indicator {
-  width: 25px;
-}
-
-input[type="month"]::-webkit-calendar-picker-indicator {
-  width: 25px;
-} */
-
 .form-container .register {
   z-index: 0;
   height: 88vh;
@@ -211,8 +246,8 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 }
 
 i {
-  font-size: 30px;
-  padding: 7px;
+  font-size: 20px;
+  padding: 5px;
 }
 .view {
   background-color: #dae2fc;
