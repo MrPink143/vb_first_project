@@ -29,7 +29,7 @@
       <div class="row">
         <!-- Side navbar -->
         <div
-          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block p-1 vh-100 side-bar"
+          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block vh-100 side-bar"
           id="nav"
           style="padding: 0"
         >
@@ -105,7 +105,7 @@
           <!-- Register form -->
           <div class="row mt-2 mb-2 mx-1 form-container">
             <div
-              class="col-lg-6 col-md-6 col-sm-12 d-none d-sm-block form-contents"
+              class="col-lg-6 col-md-6 col-sm-12 d-none d-md-block form-contents"
             >
               <img
                 src="./images/vb_registration.jpg"
@@ -138,6 +138,7 @@
                         type="tel"
                         name="stuid"
                         id="stuid"
+                        placeholder="ex : 'vbb1001'"
                         autocomplete="off"
                         required
                       />
@@ -150,6 +151,7 @@
                         type="text"
                         name="SName"
                         id="SName"
+                        placeholder="enter fullname"
                         autocomplete="off"
                         required
                       />
@@ -162,6 +164,7 @@
                         type="text"
                         name="FName"
                         id="FName"
+                        placeholder="enter fathername"
                         autocomplete="off"
                         required
                       />
@@ -183,6 +186,7 @@
                       type="tel"
                       name="number"
                       id="number"
+                      placeholder="enter 10 digit mobile number"
                       autocomplete="off"
                       required
                     />
@@ -193,6 +197,7 @@
                       rows="5"
                       cols="45"
                       id="address"
+                      placeholder="enter current address"
                       required
                     ></textarea>
                     <!-- <input type="tel" name="dob" id="dob" /> -->
@@ -204,6 +209,7 @@
                         type="text"
                         name="Q1"
                         id="Q1"
+                        placeholder="enter degree"
                         autocomplete="off"
                         required
                       />
@@ -216,6 +222,7 @@
                         type="text"
                         name="clg"
                         id="clg"
+                        placeholder="enter college name"
                         autocomplete="off"
                         required
                       />
@@ -254,10 +261,11 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
                       <select class="dropdown" name="sel2" id="sel2">
-                        <!-- <option>M1 (10.00Am to 11.30AM)</option>
+                        <option>select timing</option>
+                        <option>M1 (10.00Am to 11.30AM)</option>
                         <option>M2 (11.30AM to 1.00PM)</option>
-                        <option>M3 (2.30PM to 4.00PM)</option>
-                        <option>M4 (4.00PM to 5.30PM)</option> -->
+                        <option>A1 (2.30PM to 4.00PM)</option>
+                        <option>A2 (4.00PM to 5.30PM)</option>
                       </select>
                     </div>
                     <div
@@ -279,6 +287,7 @@
                       type="tel"
                       name="total"
                       id="total"
+                      placeholder="course total amount"
                       autocomplete="off"
                       required
                     />
