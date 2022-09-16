@@ -33,7 +33,11 @@
           id="nav"
           style="padding: 0"
         >
-          <img src="" alt="vebbox logo" />
+          <img
+            src="./images/logo.webp"
+            alt="vebbox logo"
+            class="img-fluid px-3 pt-3"
+          />
           <hr style="background-color: #00176e" />
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
@@ -93,14 +97,19 @@
         <!-- Main contents -->
         <div class="col-lg-10">
           <!-- Main navbar -->
-          <div class="row bg-warning">
-            <div>
+          <div class="row main-navbar">
+            <div class="col-lg-3 main-navbar-user">
               <button class="a3" onclick="fun()">
-                <i class="fa-sharp fa-solid fa-bars bg-warning" id="a2"></i>
+                <i class="fa-sharp fa-solid fa-bars" id="a2"></i>
               </button>
+              <!-- <span>Welcome User!</span> -->
             </div>
-
-            <!-- <h2>Main Nav</h2> -->
+            <div class="col-lg-9 main-navbar-menu">
+              <ul>
+                <li><a href="#">logout</a></li>
+                <li><img src="./images/user-logo.jpg" alt="user" /></li>
+              </ul>
+            </div>
           </div>
           <!-- Register form -->
           <div class="row mt-2 mb-2 mx-1 form-container">
