@@ -296,7 +296,8 @@
       </div>
     </div>
     <script>
-      function submit() {
+      function submit(e) {
+        e.preventDefaullt();
         var register_id = document.getElementById("regid").value;
         var student_id = document.getElementById("stuid").value;
         var s_name = document.getElementById("SName").value;
@@ -314,19 +315,9 @@
         console.log(s_name);
         alert(s_name);
       }
-      // function change(s1,s2){
-        var s1=document.getElementById("sel1");
-        var s2=document.getElementById("sel2");
-        s2.innerHTML='';
-        if(s1=="Mern"){
-          var optionArray=['m1(10.00AM to 11.30AM)|M1(10.00AM to 11.30AM)'];
-        }
-        // else()
-      }
-
 
       var temp = 0;
-      // function fun() {
+      function fun() {
         if (temp == 0) {
           document.getElementById("nav").style.visibility = "visible";
           temp = 1;
