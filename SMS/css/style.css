@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: #fff !important;
   font-family: "Raleway", sans-serif;
 }
 
@@ -29,7 +30,9 @@ body {
 
 /* side bar */
 .side-bar {
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: #ffffff;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  box-shadow: 7px 0 60px rgb(0 0 0 / 5%);
 }
 
 .accordion-item {
@@ -43,6 +46,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.5px;
   padding: 10px 15px !important;
+  border-radius: 0px !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -80,11 +84,12 @@ body {
 /* register form page */
 .form-container {
   background-color: #dae2fc;
-  border-radius: 8px;
+  border-radius: 0px;
   height: 90vh;
   padding: 0.6%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
+    0 0.9375rem 1.40625rem rgb(4 9 20 / 3%),
+    0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
 }
 
 .form-contents {
@@ -98,9 +103,13 @@ body {
 }
 
 .form-ctrl-name span {
+  font-size: 0.9rem;
+  font-weight: 600;
   display: block;
   margin-top: 10px;
   margin-bottom: 2%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .form-ctrl-name input {
@@ -110,11 +119,14 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding-left: 10px;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
+
 .form-ctrl-name .dropdown {
   color: #00176e;
   height: 35px;
@@ -122,10 +134,11 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding-left: 10px;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .form-ctrl-name textarea {
@@ -135,11 +148,13 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  box-shadow: #110c2e26 0px 48px 100px 0px;
+  /* box-shadow: #110c2e26 0px 48px 100px 0px; */
   padding-left: 10px;
   padding-top: 10px;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 form button {
@@ -153,8 +168,10 @@ form button {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.7px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  box-shadow: 0 0.125rem 0.625rem rgb(63 106 216 / 40%),
+    0 0.0625rem 0.125rem rgb(63 106 216 / 50%);
 }
 
 input::file-selector-button {
@@ -171,12 +188,15 @@ input::file-selector-button {
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
   width: 25px;
 }
+
 input[type="month"]::-webkit-calendar-picker-indicator {
   width: 25px;
-}
+} */
+
 .form-container .register {
   z-index: 0;
   height: 88vh;
@@ -205,15 +225,10 @@ i {
   /* align-items: ; */
   /* /* margin-left: 300px; */
 }
+
 @media (max-width: 576px) {
   .form-contents {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 8px;
   }
-  /* .form-container .bar {
-    height: 500px;
-  }
-  .nav1 {
-    visibility: hidden;
-  } */
 }
