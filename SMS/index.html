@@ -135,8 +135,8 @@
                       <span>Register Id</span>
                       <input
                         type="number"
-                        name="regid"
-                        id="regid"
+                        name="register_id"
+                        id="register_id"
                         placeholder="Enter register number"
                         autocomplete="off"
                         required
@@ -148,9 +148,9 @@
                       <span>Student Id</span>
                       <input
                         type="tel"
-                        name="stuid"
-                        id="stuid"
-                        placeholder="ex : 'vbb1001'"
+                        name="student_id"
+                        id="student_id"
+                        placeholder="Ex : 'vbb1001'"
                         autocomplete="off"
                         required
                       />
@@ -161,9 +161,9 @@
                       <span>Name</span>
                       <input
                         type="text"
-                        name="SName"
-                        id="SName"
-                        placeholder="enter fullname"
+                        name="StudentName"
+                        id="StudentName"
+                        placeholder="Enter fullname"
                         autocomplete="off"
                         required
                       />
@@ -174,8 +174,8 @@
                       <span>Father Name</span>
                       <input
                         type="text"
-                        name="FName"
-                        id="FName"
+                        name="FatherName"
+                        id="FatherName"
                         placeholder="enter fathername"
                         autocomplete="off"
                         required
@@ -183,11 +183,22 @@
                     </div>
                   </div>
                   <div class="form-ctrl-name">
+                    <span>E-mail Id</span>
+                    <input
+                      type="email"
+                      name="EmailId"
+                      id="EmailId"
+                      placeholder="Enter Your Email-Id"
+                      required
+                      
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
                     <span>Date Of Birth</span>
                     <input
                       type="date"
-                      name="dob"
-                      id="dob"
+                      name="date of birth"
+                      id="date of birth"
                       required
                       style="padding: 20px"
                     />
@@ -196,7 +207,7 @@
                     <span>Phone Number</span>
                     <input
                       type="number"
-                      name="number"
+                      name="phonenumber"
                       id="phoneNumber"
                       placeholder="enter 10 digit mobile number"
                       autocomplete="off"
@@ -221,8 +232,8 @@
                       <span>Qualification</span>
                       <input
                         type="text"
-                        name="Q1"
-                        id="Q1"
+                        name="Qualification"
+                        id="Qualification"
                         placeholder="enter degree"
                         autocomplete="off"
                         required
@@ -234,8 +245,8 @@
                       <span>College Name</span>
                       <input
                         type="text"
-                        name="clg"
-                        id="clg"
+                        name="clg_name"
+                        id="clg_name"
                         placeholder="enter college name"
                         autocomplete="off"
                         required
@@ -275,7 +286,7 @@
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
-                      <select class="dropdown">
+                      <select class="dropdown" id="batchTime">
                         <option>select timing</option>
                         <option>M1 (10.00Am to 11.30AM)</option>
                         <option>M2 (11.30AM to 1.00PM)</option>
@@ -289,8 +300,8 @@
                       <span>Date of Joining</span>
                       <input
                         type="date"
-                        name="date"
-                        id="date"
+                        name="dateofJoining"
+                        id="dateofJoining"
                         required
                         style="padding: 20px"
                       />
@@ -377,19 +388,20 @@
 
       function formSubmit(e) {
         e.preventDefaullt();
-        var register_id = document.getElementById("regid").value;
-        var student_id = document.getElementById("stuid").value;
-        var s_name = document.getElementById("SName").value;
-        var f_name = document.getElementById("FName").value;
-        var dob = document.getElementById("dob").value;
-        var phone = document.getElementById("number").value;
+        var register_id = document.getElementById("register_id").value;
+        var student_id = document.getElementById("student_id").value;
+        var studentname = document.getElementById("StudentName").value;
+        var fathername = document.getElementById("FatherName").value;
+        var Email = document.getElementById("EmailId").value;
+        var dateOfBirth = document.getElementById("dateofbirth").value;
+        var phoneNumber = document.getElementById("phonenumber").value;
         var address = document.getElementById("address").value;
-        var Q1 = document.getElementById("Q1").value;
-        var clg_name = document.getElementById("clg").value;
-        var c_name = document.getElementById("cname").value;
-        var c_d = document.getElementById("courseDuration").value;
-        var b_time = document.getElementById("time").value;
-        var join_date = document.getElementById("date").value;
+        var Qualification = document.getElementById("Qualification").value;
+        var clg_name = document.getElementById("clg_name").value;
+        var course_name = document.getElementById("courseName").value;
+        var course_duration = document.getElementById("courseDuration").value;
+        var batch_time = document.getElementById("batchTime").value;
+        var join_date = document.getElementById("dateofJoining").value;
         var total_amt = document.getElementById("total").value;
         console.log(s_name);
         alert(s_name);
