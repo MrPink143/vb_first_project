@@ -114,16 +114,7 @@
             </div>
           </div>
           <!-- Register form -->
-          <div class="row mt-2 mb-2 mx-1 form-container">
-            <!-- <div
-              class="col-lg-6 col-md-6 col-sm-12 d-none d-md-block form-contents"
-            >
-              <img
-                src="./images/vb_registration.jpg"
-                alt="vebbox registration"
-                class="img-fluid rounded"
-              />
-            </div> -->
+          <div class="row mt-2 mb-2 mx-1 form-container1">
             <div class="col-lg-12 col-md-12 col-sm-12 p-4 register">
               <div class="form-header">
                 <h3>Register Details !</h3>
@@ -137,9 +128,8 @@
                         type="number"
                         name="register_id"
                         id="register_id"
-                        placeholder="Enter register number"
-                        autocomplete="off"
-                        required
+                        class="input1"
+                        readonly
                       />
                     </div>
                     <div
@@ -150,9 +140,8 @@
                         type="tel"
                         name="student_id"
                         id="student_id"
-                        placeholder="Ex : 'vbb1001'"
-                        autocomplete="off"
-                        required
+                        class="input1"
+                        readonly
                       />
                     </div>
                   </div>
@@ -163,9 +152,8 @@
                         type="text"
                         name="StudentName"
                         id="StudentName"
-                        placeholder="Enter fullname"
-                        autocomplete="off"
-                        required
+                        class="input1"
+                        readonly
                       />
                     </div>
                     <div
@@ -176,11 +164,26 @@
                         type="text"
                         name="FatherName"
                         id="FatherName"
-                        placeholder="enter fathername"
-                        autocomplete="off"
-                        required
+                        class="input1"
+                        readonly
                       />
                     </div>
+                  </div>
+                  
+                  <div class="form-ctrl-name">
+                    <span>Date Of Birth</span>
+                    <input
+                      type="text"
+                      name="date of birth"
+                      id="date of birth"
+                      class="input2"
+                      readonly
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Phone Number</span>
+                    <input type="number" name="phonenumber" id="phoneNumber" class="input2" readonly />
+                    <!-- <span id="phoneNumMessage"></span> -->
                   </div>
                   <div class="form-ctrl-name">
                     <span>E-mail Id</span>
@@ -188,44 +191,13 @@
                       type="email"
                       name="EmailId"
                       id="EmailId"
-                      placeholder="Enter Your Email-Id"
-                      required
-                      
+                      class="input2"
+                      readonly
                     />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Date Of Birth</span>
-                    <input
-                      type="date"
-                      name="date of birth"
-                      id="date of birth"
-                      required
-                      style="padding: 20px"
-                    />
-                  </div>
-                  <div class="form-ctrl-name">
-                    <span>Phone Number</span>
-                    <input
-                      type="number"
-                      name="phonenumber"
-                      id="phoneNumber"
-                      placeholder="enter 10 digit mobile number"
-                      autocomplete="off"
-                      required
-                      pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-                      onkeyup="phoneNumValidation();return false;"
-                    />
-                    <span id="phoneNumMessage"></span>
                   </div>
                   <div class="form-ctrl-name">
                     <span>Address</span>
-                    <textarea
-                      rows="5"
-                      cols="45"
-                      id="address"
-                      placeholder="enter current address"
-                      required
-                    ></textarea>
+                    <textarea rows="5" cols="45" id="address" class="input3" readonly></textarea>
                   </div>
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -234,94 +206,55 @@
                         type="text"
                         name="Qualification"
                         id="Qualification"
-                        placeholder="enter degree"
-                        autocomplete="off"
-                        required
+                        class="input1"
+                        readonly
                       />
                     </div>
                     <div
                       class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
                     >
                       <span>College Name</span>
-                      <input
-                        type="text"
-                        name="clg_name"
-                        id="clg_name"
-                        placeholder="enter college name"
-                        autocomplete="off"
-                        required
-                      />
+                      <input type="text" name="clg_name" id="clg_name" class="input1" readonly />
                     </div>
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Name</span>
-                    <select
-                      class="dropdown"
-                      id="selectCourse"
-                      onchange="priceChangeValue()"
-                    >
-                      <option value="">Select course</option>
-                      <option value="mern">Mern</option>
-                      <option value="web">Web</option>
-                      <option value="python">Python</option>
-                      <option value="pythonAdvance">Python Advance</option>
-                      <option value="c">C, CPP, Java</option>
-                      <option value="hardware">HardWare</option>
-                      <option value="photoshop">Photoshop</option>
-                      <option value="illustrator">Illustrator</option>
-                      <option value="java">Java & J2EE</option>
-                      <option value="office">Basic Ms-Office</option>
-                    </select>
+                    <input type="text" class="input2" id="selectCourse" readonly />
+                      
                   </div>
                   <div class="form-ctrl-name">
                     <span>Cource Duration</span>
-                    <input
-                      type="text"
-                      id="courseDuration"
-                      value=""
-                      placeholder="Course duration"
-                      readonly
-                    />
+                    <input type="text" id="courseDuration" value="" class="input2" readonly />
                   </div>
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
-                      <select class="dropdown" id="batchTime">
-                        <option>select timing</option>
-                        <option>M1 (10.00Am to 11.30AM)</option>
-                        <option>M2 (11.30AM to 1.00PM)</option>
-                        <option>A1 (2.30PM to 4.00PM)</option>
-                        <option>A2 (4.00PM to 5.30PM)</option>
-                      </select>
+                      <input type="text" class="input1" id="batchTime" readonly/>
+                       
+                      
                     </div>
                     <div
                       class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
                     >
                       <span>Date of Joining</span>
                       <input
-                        type="date"
+                        type="text"
                         name="dateofJoining"
                         id="dateofJoining"
-                        required
-                        style="padding: 20px"
+                        class="input1"
+                        readonly
                       />
                     </div>
                   </div>
                   <div class="form-ctrl-name">
                     <span>Total Payment</span>
-                    <input
-                      type="number"
-                      name="total"
-                      id="total"
-                      placeholder="course total amount"
-                      readonly
-                    />
+                    <input type="number" name="total" id="total" class="input2" readonly />
                   </div>
                   <div class="form-ctrl-name">
                     <span>Photo</span>
-                    <input type="file"  name="photo" id="photo" />
+                    <div class="displayImage" id="displayImage"></div>
                   </div>
-                  <button class="mt-5" onclick="formSubmit()">Submit</button>
+
                 </div>
               </form>
             </div>
@@ -330,9 +263,6 @@
       </div>
     </div>
     <script>
-
-      
-
       var temp = 0;
       function fun() {
         if (temp == 0) {
