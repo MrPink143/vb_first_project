@@ -1,5 +1,3 @@
-
-
 function phoneNumValidation() {
     var mobile = document.getElementById("phoneNumber");
 
