@@ -53,3 +53,9 @@ body {
   height: 2px;
   background: #eee;
 }
+
+@media only screen and (min-width: 575){
+  .b1 button{
+    width: 10px;
+  }
+}
