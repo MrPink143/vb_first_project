@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-Registration!</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/staff.css" />
+    <link rel="html" href="./pages/student_view.html" />
+    <!-- Font icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Third party css libraries -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.1.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Side navbar -->
+        <div
+          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block vh-100 side-bar"
+          id="nav"
+          style="padding: 0"
+        >
+          <img
+            src="./img/logo.webp"
+            alt="vebbox logo"
+            class="img-fluid px-3 pt-3"
+          />
+          <hr style="background-color: #00176e" />
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  student
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="./index.html">Registration</a></li>
+                    <li>
+                      <a href="./pages/student_view.html">student details</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  staff
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="staff.html">add staff details</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main contents -->
+        <div class="col-lg-10">
+          <!-- Main navbar -->
+          <div class="row main-navbar">
+            <div class="col-lg-3 main-navbar-user">
+              <button class="a3" onclick="fun()">
+                <i class="fa-sharp fa-solid fa-bars" id="a2"></i>
+              </button>
+              <!-- <span>Welcome User!</span> -->
+            </div>
+            <div class="col-lg-9 main-navbar-menu">
+              <ul>
+                <li><a href="#">logout</a></li>
+                <li><img src="./img/user-logo.jpg" alt="user" /></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Register form -->
+          <div class="row mt-2 mb-2 mx-1 form-container">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 d-none d-md-block form-contents"
+            >
+              <img
+                src="./img/vb_registration.jpg"
+                alt="vebbox registration"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 p-4 register">
+              <div class="form-header">
+                <h3>Add Staff Detail!</h3>
+              </div>
+              <form action="" method="POST">
+                <div class="form-ctrl">
+                  <!-- <div class="row form-ctrl-name"> -->
+                  <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Register Id</span> -->
+                  <!-- <input
+                        type="number"
+                        name="register_id"
+                        id="register_id"
+                        placeholder="Enter register number"
+                        autocomplete="off"
+                        required
+                      /> -->
+                  <!-- </div> -->
+                  <!-- <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Student Id</span>
+                      <input
+                        type="tel"
+                        name="student_id"
+                        id="student_id"
+                        placeholder="Ex : 'vbb1001'"
+                        autocomplete="off"
+                        required
+                      />
+                    </div> -->
+                  <!-- </div> -->
+                  <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>First Name</span>
+                      <input
+                        type="text"
+                        name="StudentName"
+                        id="StudentName"
+                        placeholder="Enter Your First Name"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Last Name</span>
+                      <input
+                        type="text"
+                        name="FatherName"
+                        id="FatherName"
+                        placeholder="Enter Your Last Name"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row form-ctrl-name">
+                    <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Register Id</span>
+                      <input
+                        type="number"
+                        name="register_id"
+                        id="register_id"
+                        placeholder="Enter register number"
+                        autocomplete="off"
+                        required
+                      />
+                    </div> -->
+                    <div
+                      class="col-lg-12 col-md-12 col-sm-12 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Staff Id</span>
+                      <input
+                        type="tel"
+                        name="student_id"
+                        id="student_id"
+                        placeholder="Ex : 'vb143'"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>E-mail Id</span>
+                    <input
+                      type="email"
+                      name="EmailId"
+                      id="EmailId"
+                      placeholder="Enter Your Email-Id"
+                      required
+                    />
+                  </div>
+                  <div class="form-ctrl-name">
+                    <span>Password</span>
+                    <input
+                      type="password"
+                      name="password"
+                      id="Password"
+                      placeholder="Enter Your Password"
+                      required
+                    />
+                  </div>
+                  <!-- <div class="form-ctrl-name">
+                    <span>Date Of Birth</span>
+                    <input
+                      type="date"
+                      name="date of birth"
+                      id="date of birth"
+                      required
+                      style="padding: 20px"
+                    />
+                  </div> -->
+                  <div class="form-ctrl-name">
+                    <span>Phone Number</span>
+                    <input
+                      type="number"
+                      name="phonenumber"
+                      id="phoneNumber"
+                      placeholder="enter 10 digit mobile number"
+                      autocomplete="off"
+                      required
+                      pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                      onkeyup="phoneNumValidation();return false;"
+                    />
+                    <span id="phoneNumMessage"></span>
+                  </div>
+                  <!-- <div class="form-ctrl-name">
+                    <span>Address</span>
+                    <textarea
+                      rows="5"
+                      cols="45"
+                      id="address"
+                      placeholder="enter current address"
+                      required
+                    ></textarea>
+                  </div> -->
+                  <!-- <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Qualification</span>
+                      <input
+                        type="text"
+                        name="Qualification"
+                        id="Qualification"
+                        placeholder="enter degree"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>College Name</span>
+                      <input
+                        type="text"
+                        name="clg_name"
+                        id="clg_name"
+                        placeholder="enter college name"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                  </div> -->
+                  <!-- <div class="form-ctrl-name">
+                    <span>Cource Name</span>
+                    <select
+                      class="dropdown"
+                      id="selectCourse"
+                      onchange="priceChangeValue()"
+                    >
+                      <option value="">Select course</option>
+                      <option value="mern">Mern</option>
+                      <option value="web">Web</option>
+                      <option value="python">Python</option>
+                      <option value="pythonAdvance">Python Advance</option>
+                      <option value="c">C, CPP, Java</option>
+                      <option value="hardware">HardWare</option>
+                      <option value="photoshop">Photoshop</option>
+                      <option value="illustrator">Illustrator</option>
+                      <option value="java">Java & J2EE</option>
+                      <option value="office">Basic Ms-Office</option>
+                    </select>
+                  </div> -->
+                  <!-- <div class="form-ctrl-name">
+                    <span>Cource Duration</span>
+                    <input
+                      type="text"
+                      id="courseDuration"
+                      value=""
+                      placeholder="Course duration"
+                      readonly
+                    />
+                  </div> -->
+                  <!-- <div class="row form-ctrl-name">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <span>Batch Timing</span>
+                      <select class="dropdown" id="batchTime">
+                        <option>select timing</option>
+                        <option>M1 (10.00Am to 11.30AM)</option>
+                        <option>M2 (11.30AM to 1.00PM)</option>
+                        <option>A1 (2.30PM to 4.00PM)</option>
+                        <option>A2 (4.00PM to 5.30PM)</option>
+                      </select>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12 mt-lg-0 mt-sm-0 mt-md-0 mt-3"
+                    >
+                      <span>Date of Joining</span>
+                      <input
+                        type="date"
+                        name="dateofJoining"
+                        id="dateofJoining"
+                        required
+                        style="padding: 20px"
+                      />
+                    </div>
+                  </div> -->
+                  <!-- <div class="form-ctrl-name">
+                    <span>Total Payment</span>
+                    <input
+                      type="number"
+                      name="total"
+                      id="total"
+                      placeholder="course total amount"
+                      readonly
+                    />
+                  </div> -->
+                  <!-- <div class="form-ctrl-name">
+                    <span>Photo</span>
+                    <input type="file" name="photo" id="photo" />
+                  </div> -->
+                  <button class="mt-5" onclick="formSubmit()">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/staff.js"></script>
+    <!-- Third party js libraries -->
+    <script src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
