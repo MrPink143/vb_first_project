@@ -74,14 +74,14 @@ function phoneNumValidation() {
     var total_amt = document.getElementById("total").value;
   }
 
-  var temp = 0;
-  function fun() {
-    if (temp == 0) {
-      document.getElementById("nav").style.visibility = "visible";
-      temp = 1;
-    } else if (temp == 1) {
-      document.getElementById("nav").style.visibility = "hidden";
+  // var temp = 0;
+  // function fun() {
+  //   if (temp == 0) {
+  //     document.getElementById("nav").style.visibility = "visible";
+  //     temp = 1;
+  //   } else if (temp == 1) {
+  //     document.getElementById("nav").style.visibility = "hidden";
 
-      temp = 0;
-    }
-  }
+  //     temp = 0;
+  //   }
+  // }
