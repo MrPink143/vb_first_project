@@ -72,6 +72,9 @@ function phoneNumValidation() {
     var total_amt = document.getElementById("total").value;
   }
 
+
+
+
   // var temp = 0;
   // function fun() {
   //   if (temp == 0) {

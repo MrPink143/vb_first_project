@@ -14,7 +14,7 @@ body {
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 3px;
-  display: none;
+  /* display: none; */
 }
 
 ::-webkit-scrollbar-track {
@@ -168,9 +168,10 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: capitalize;
+  text-transform:uppercase;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
+
 
 .form-ctrl-name .dropdown {
   color: #00176e;
@@ -183,7 +184,7 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .form-ctrl-name textarea {
@@ -199,7 +200,7 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 form button {
