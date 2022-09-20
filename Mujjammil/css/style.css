@@ -12,8 +12,8 @@ body {
   background-color: #fff;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  height: 100vh;
-  overflow: auto;
+  /* height: 100vh;
+  overflow: auto; */
 }
 
 .rad {
@@ -56,9 +56,12 @@ body {
 }
 
 .navigationbar {
-  box-shadow: 1px 1px 5px black;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  /* box-shadow: 1px 1px 5px black; */
+  /* border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px; */
+  position: fixed;
+  top: 0;
+  background-color: #522ba8;
 }
 
 .navigationcolumn {
@@ -82,15 +85,15 @@ body {
 }
 
 .main {
-  display: block;
-  margin-top: 30px;
+  display: none;
+  margin-top: 100px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 5px wheat;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .mainrow {
@@ -102,19 +105,19 @@ body {
 
 .abs {
   background-color: #522da8;
-  background-image: linear-gradient(to bottom right, #522da8, #fff);
+  /* background-image: linear-gradient(to bottom right, #522da8, #fff); */
   background-repeat: no-repeat;
   background-position: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 7px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .imgleft {
-  margin-top: 90px;
-  margin-left: 30px;
+  /* margin-top: 110px; */
+  /* margin-left: 30px; */
   border-radius: 10px;
 }
 
@@ -147,7 +150,8 @@ body {
 }
 
 .recover {
-  padding-top: 14px;
+  text-decoration: none;
+  color: #522da8;
 }
 
 .login {
@@ -159,7 +163,7 @@ body {
 }
 
 .google {
-  background-color: #fff;
+  background-color: #978db9;
   border: none;
   box-shadow: 0px 0px 0px 0px #522da8;
   margin-bottom: 20px;
@@ -168,4 +172,18 @@ body {
   height: 45px;
   width: 100%;
   border-radius: 5px;
+}
+
+.span1 {
+  color: #522da8;
+}
+
+.mail {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.pass {
+  height: 20px;
+  border-radius: 10px;
 }

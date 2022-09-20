@@ -23,7 +23,7 @@
   </head>
   <body>
 
-    <div class="container navigationbar">
+    <div class="container-fluid navigationbar">
       <div class="row"> 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navigationcolumn">
           <nav class="navbar navbar-light navigationlight">
@@ -31,7 +31,7 @@
               <i class="fa-solid fa-house-user userbtn"></i>
             </a>
             <form class="form-inline">
-              <button class="btn my-2 my-sm-0 m-5" style="color: #fff; box-shadow: 1px 1px 1px 1px black;" type="button" onclick="fn()">Login</button>
+              <button class="my-2 my-sm-0 m-5" style="color: #522da8; height: 35px; width: 70px; background-color: #fff; outline: none; border-radius: 5px; border: none;" type="button" onclick="fn()">Login</button>
             </form> 
           </nav>
         </div>
@@ -42,10 +42,10 @@
     <div class="container main" id="form">
       <div class="row mainrow">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 abs">
-          <img src="./img/img.jpg" alt="Loading..." class="imgleft" height="70%" width="90%"/>
+          <img src="./img/log-in.png" alt="Loading..." class="imgleft"/>
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rel">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rel" style="background-color: #978db9">
           <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 offset-5 regcol">
               <div class="rad text-center">
@@ -69,12 +69,12 @@
             <div class="col-8 offset-2">
               <form>
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <input type="email" class="form-control mail" id="floatingInput" placeholder="name@example.com">
                   <label for="floatingInput">Email address</label>
                   <i class="fa-solid fa-at" style="color: #522da8;"></i>
                 </div>
                 <div class="form-floating">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <input type="password" class="form-control pass" id="floatingPassword" placeholder="Password">
                   <label for="floatingPassword">Password</label>
                   <i class="fa-solid fa-lock" style="color: #522da8;"></i>
                 </div>
@@ -82,7 +82,7 @@
             </div>
           </div>
           
-          <div class="row">
+          <div class="row mt-3">
             <div class="col-4 offset-2 Remember">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -91,13 +91,13 @@
                 </label>
               </div>
             </div>
-              <div class="col-4 text-end recover">
-                <a href="#" style="text-decoration: none; color: #522da8;">Recover Password!</a>
+              <div class="col-4 text-end">
+                <a href="#" class="recover" >Recover Password!</a>
               </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 offset-2 b1">
+            <div class="col-8 offset-2 b1">
               <button type="submit" class="button login">Login</button>
             </div>
           </div>
@@ -111,10 +111,10 @@
           </div>
 
           <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 offset-2">
+            <div class="col-8 offset-2">
               <a href="#">
                 <button class="google"
-              type="submit"><img src="./img/google.png" alt="Google"/><span style="color: #522da8;"> Sign in with google </span></button>
+              type="submit"><img src="./img/google.png" alt="Google"/><span class="span1"> Sign in with google </span></button>
               </a>
             </div>
           </div>
