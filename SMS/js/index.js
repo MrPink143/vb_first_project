@@ -3,8 +3,8 @@ function phoneNumValidation() {
 
     var message = document.getElementById("phoneNumMessage");
 
-    var badColor = "#FF9B37";
-    var success = 'green';
+    var badColor = "#FF0000";
+    var success = '#4BB543';
 
     if (mobile.value.length != 10) {
       message.style.color = badColor;
