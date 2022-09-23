@@ -11,7 +11,7 @@ function phoneNumValidation() {
       message.innerHTML = "required 10 digits only";
     }else {
       message.style.color = success;
-      message.innerHTML = "valid phone number";
+      message.innerHTML = " phone number valid";
     }
   }
 

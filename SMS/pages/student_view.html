@@ -101,15 +101,76 @@
           <!-- Main navbar -->
           <div class="row main-navbar">
             <div class="col-lg-3 main-navbar-user">
-              <button class="a3" onclick="fun()">
+              <button class="a3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
                 <i class="fa-sharp fa-solid fa-bars" id="a2"></i>
               </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      student
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="../index.html">Registration</a></li>
+                        <li>
+                          <a href="./student_view.html">student details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      staff
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="/Mujjammil/staff.html">add staff details</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <!-- <span>Welcome User!</span> -->
             </div>
             <div class="col-lg-9 main-navbar-menu">
               <ul>
                 <li><a href="#">logout</a></li>
-                <li><img src="../images/user-logo.jpg" alt="user" /></li>
+                <li><img src="./images/user-logo.jpg" alt="user" /></li>
               </ul>
             </div>
           </div>
