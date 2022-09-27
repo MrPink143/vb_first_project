@@ -271,6 +271,17 @@ i {
   display: flex;
   justify-content: flex-start;
 }
+.main-navbar button
+        {
+            visibility: hidden;
+        }
+        @media (max-width: 991px) {
+            .main-navbar button
+            {
+                visibility: visible;
+            }
+  
+        }
 
 @media (max-width: 576px) {
   .form-contents {
