@@ -168,10 +168,9 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: capitalize;
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
 
 .form-ctrl-name .dropdown {
   color: #00176e;
@@ -271,24 +270,20 @@ i {
   display: flex;
   justify-content: flex-start;
 }
-.main-navbar button
-        {
-            visibility: hidden;
-        }
-        @media (max-width: 991px) {
-            .main-navbar button
-            {
-                visibility: visible;
-            }
-  
-        }
+.main-navbar button {
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .main-navbar button {
+    visibility: visible;
+  }
+}
 
 @media (max-width: 576px) {
   .form-contents {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 8px;
   }
-  
 }
 
 /*---------------------------------- view page style------------------------------------*/
@@ -298,12 +293,11 @@ i {
   border: none;
   border-bottom: 2px solid gray;
   outline: none;
-  border-radius:0px;
+  border-radius: 0px;
   height: 30px;
   padding: 10px;
   color: #333;
 }
-
 
 .form-ctrl-name .input2 {
   background: rgba(255, 255, 255, 0.4);
@@ -314,9 +308,7 @@ i {
   border-radius: 0px;
   padding: 10px;
   color: #333;
-
 }
-
 
 .form-ctrl-name .input3 {
   background: rgba(255, 255, 255, 0.4);
@@ -331,7 +323,6 @@ i {
   color: #333;
 }
 
-
 .form-container1 {
   background-color: #fff;
   border-radius: 0px;
@@ -345,8 +336,28 @@ i {
     0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
 }
 
-.displayImage{
-  border:2px solid gray;
-  height:200px;
-  width:200px;
+.displayImage {
+  border: 2px solid gray;
+  height: 200px;
+  width: 200px;
+}
+/* ---------------------------------------Dashboard-------------------------------------- */
+.box1 {
+  background-color: #fff;
+  height: 150px;
+  width: auto;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.box2 {
+  background-color: #fff;
+  height: 150px;
+  width: auto;
+  border-radius: 20px;
+}
+.box3 {
+  background-color: #fff;
+  height: 150px;
+  width: auto;
+  border-radius: 20px;
 }
