@@ -13,8 +13,8 @@ body {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 3px;
-  /* display: none; */
+  width: 1px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,9 +24,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #00176e;
 }
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #4f7ad0;
-}
+} */
 
 /* side bar */
 .side-bar {
@@ -348,6 +348,7 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .box2 {
   background-color: #fff;
@@ -355,6 +356,7 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .box3 {
   background-color: #fff;
@@ -362,18 +364,25 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .box4 {
-  background-color: rgb(159, 159, 159);
+  background-color: rgb(199, 197, 197);
   height: 300px;
   width: auto;
   border-radius: 20px;
+  min-width:50%;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .box5 {
-  background-color:rgb(159, 159, 159) ;
+  background-color:rgb(199, 197, 197) ;
   height: 300px;
   width: auto;
   border-radius: 20px;
+  position: relative;
+  min-width:auto;
+  overflow: auto;
 }
 .total
 {
@@ -381,7 +390,7 @@ i {
   font-weight:600!important;
   font-size: larger;
 }
-.h11{
+.headingName{
   font-weight:600 !important;
   /* line-height: 1.5; */
   letter-spacing:0.5px;
@@ -389,7 +398,7 @@ i {
   color: #6c757d;
   text-transform: uppercase!important;
 }
-.h12
+.headingName1
 {
   font-size: 14px;
   display: block;
@@ -398,7 +407,7 @@ i {
   color:#6c757d ;
   font-family: "Raleway", sans-serif!important;
 }
-.h13{
+.headingName2{
   margin-top:10px;
   font-size: 14px;
   position: absolute;
@@ -448,6 +457,21 @@ i {
   height:70px;
   width:70px;
   border-radius:50%;
+  text-align: center;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.box5 i {
+  color: #fff;
+  left:15px;
+  position:absolute;
+  line-height: 1.5;
+  font-size:15px;
+  background-color: rgb(112, 7, 112);
+  height:40px;
+  width:40px;
+  border-radius:40%;
   text-align: center;
   display: flex;
   align-items:center;
