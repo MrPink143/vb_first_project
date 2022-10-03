@@ -74,9 +74,10 @@
                   <i class="fa-solid fa-at" style="color: #522da8;"></i>
                 </div>
                 <div class="form-floating">
-                  <input type="password" class="form-control pass" id="floatingPassword" placeholder="Password">
+                  <input type="password" class="form-control pass" id="floatingPassword" maxlength="8" onkeyup="sub()" placeholder="Password">
                   <label for="floatingPassword">Password</label>
                   <i class="fa-solid fa-lock" style="color: #522da8;"></i>
+                  <span id="aa"></span>
                 </div>
               </form>
             </div>
@@ -105,6 +106,25 @@
       </div>
     </div>
     <script>
+      var success = "green";
+        var danger = "red";
+        var orange = "orange";
+      function sub() {
+        
+        var pass = document.getElementById("floatingPassword").value;
+        if (pass  == "") {
+          document.getElementById("aa").innerHTML = "Pls Enter Your Password";
+          document.getElementById("aa").style.color = danger;
+        } else if (pass.length === 8) {
+          document.getElementById("aa").innerHTML = "Valid Password";
+          document.getElementById("aa").style.color = success;
+        } else {
+          document.getElementById("aa").innerHTML = "min 8 Characters Valid";
+          document.getElementById("aa").style.color = orange;
+        }
+        // console.log(pass);
+      } 
+
       var temp=0;
       function fn()
       {

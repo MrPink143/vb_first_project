@@ -230,6 +230,7 @@
                         placeholder="Enter Fullname"
                         autocomplete="off"
                         maxlength="20"
+                        onkeypress="return onlyAlphabets(event,this);"
                         required
                       />
                     </div>
@@ -244,6 +245,7 @@
                         placeholder="Enter Fathername"
                         autocomplete="off"
                         maxlength="20"
+                        onkeypress="return onlyAlphabets(event,this);"
                         required
                       />
                     </div>

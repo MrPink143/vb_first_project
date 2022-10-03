@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+.main-navbar button {
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .main-navbar button {
+    visibility: visible;
+  }
+}
 
 body {
   background-color: #fff !important;
