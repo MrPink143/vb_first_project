@@ -202,7 +202,7 @@ body {
   text-transform: uppercase;
 }
 
-form button {
+form .formbutton1 {
   outline: none;
   border: none;
   height: 40px;
