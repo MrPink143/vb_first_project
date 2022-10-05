@@ -13,20 +13,26 @@ body {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 1px;
-  display: none;
+  width: 2px;
+  height:2px;
+  /* display:none; */
+  visibility: visible;
 }
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  height: auto;
+  width:1px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #00176e;
+  height: auto;
+  width:1px;
 }
-/* ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #4f7ad0;
-} */
+}
 
 /* side bar */
 .side-bar {
@@ -371,7 +377,8 @@ i {
   height:auto;
   width: auto;
   border-radius: 20px;
-  min-width:50%;
+  min-height:50px;
+  position: relative;
   overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
