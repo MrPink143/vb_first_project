@@ -192,7 +192,7 @@
               <div class="form-header">
                 <h3>Register Here!</h3>
               </div>
-              <form action="" method="POST">
+              <form action="./php/student.php" method="POST">
                 <div class="form-ctrl">
                   <!-- <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -255,7 +255,7 @@
                     <span>Date Of Birth</span>
                     <input
                       type="date"
-                      name="date of birth"
+                      name="date_of_birth"
                       id="date of birth"
                       required
                       style="padding: 20px"
@@ -293,6 +293,7 @@
                       rows="5"
                       cols="45"
                       id="address"
+                      name="address"
                       placeholder="Enter Current Address"
                       required
                     ></textarea>
@@ -326,6 +327,7 @@
                   <div class="form-ctrl-name">
                     <span>Cource Name</span>
                     <select
+                    name="course"
                       class="dropdown"
                       id="selectCourse"
                       onchange="priceChangeValue()"
@@ -348,6 +350,7 @@
                     <input
                       type="text"
                       id="courseDuration"
+                      name="course_duration"
                       value=""
                       placeholder="Course Duration"
                       readonly
@@ -356,7 +359,7 @@
                   <div class="row form-ctrl-name">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                       <span>Batch Timing</span>
-                      <select class="dropdown" id="batchTime">
+                      <select class="dropdown" id="batchTime" name="time">
                         <option>select timing</option>
                         <option>M1 (10.00Am to 11.30AM)</option>
                         <option>M2 (11.30AM to 1.00PM)</option>
@@ -391,7 +394,7 @@
                     <span>Photo</span>
                     <input type="file" name="photo" id="photo" />
                   </div>
-                  <button class="mt-5 formbutton1" onclick="formSubmit()">Submit</button>
+                  <input type="submit" value="submit" name="submit" class="mt-5 formbutton1" onclick="formSubmit()">
                 </div>
               </form>
             </div>
