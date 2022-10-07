@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff !important;
+  background-color: #f8f9fa !important;
   font-family: "Raleway", sans-serif;
 }
 
@@ -354,7 +354,7 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .box2 {
   background-color: #fff;
@@ -362,7 +362,7 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .box3 {
   background-color: #fff;
@@ -370,20 +370,19 @@ i {
   width: auto;
   border-radius: 20px;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .box4 {
   background-color:#fff;
   height:auto;
   width: auto;
-  border-radius: 20px;
   min-height:50px;
   position: relative;
   overflow: auto;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .box5 {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color:#fff ;
   height:300px;
   width: auto;
@@ -391,6 +390,16 @@ i {
   position: relative;
   min-width:auto;
   overflow: auto;
+}
+.box6 {
+  background-color:#fff;
+  height:300px;
+  width: auto;
+  border-radius: 20px;
+  min-height:50px;
+  position: relative;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .total
 {
@@ -440,7 +449,7 @@ i {
   position:absolute;
   line-height: 1.5;
   font-size:25px;
-  background-color: rgb(112, 7, 112);
+  background-image: linear-gradient(310deg,#5e72e4,#825ee4);
   height:70px;
   width:70px;
   border-radius:50%;
@@ -455,7 +464,7 @@ i {
   position:absolute;
   line-height: 1.5;
   font-size:25px;
-  background-color: rgb(112, 7, 112);
+  background-image: linear-gradient(310deg,#fb6340,#fbb140);
   height:70px;
   width:70px;
   border-radius:50%;
@@ -470,7 +479,7 @@ i {
   position:absolute;
   line-height: 1.5;
   font-size:25px;
-  background-color: rgb(112, 7, 112);
+  background-color: #2ecc71;
   height:70px;
   width:70px;
   border-radius:50%;
@@ -501,6 +510,10 @@ table tr{
   border:none;
   border-bottom:1px solid grey;
 }
-thead{
-  border-bottom: none !important;
+thead,th{
+  /* border-bottom: none !important; */
+  text-transform: uppercase;
+}
+.image{
+  margin-left:250px;
 }

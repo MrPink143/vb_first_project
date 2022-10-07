@@ -207,7 +207,7 @@
             <div class="col-lg-4 col-sm-12 col-md-6 col-xs-12 p-3">
               <div class="box2 p-3">
                 <i class="fa-solid fa-book-open"></i>
-                <span class="headingName">TOTAL STUDENTS</span>
+                <span class="headingName">CURRENT STUDENTS </span>
                 <span class="total">1,500</span>
                 <span class="headingName1">since</span>
                 <span class="headingName2">Yesterday</span>
@@ -216,107 +216,40 @@
             <div class="col-lg-4 col-sm-12  col-md-6 offset-md-3 offset-lg-0 offset-sm-0 col-xs-12 p-3">
               <div class="box3 p-3">
                 <i class="fa-solid fa-check"></i>
-                <span class="headingName">TOTAL STUDENTS</span>
+                <span class="headingName">COMPLETED STUDENTS</span>
                 <span class="total">1,500</span>
                 <span class="headingName1">since</span>
                 <span class="headingName2">Yesterday</span>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-3 " >
-              <div class="box4 p-3">
-                <span class="headingName">Student Details</span>
-               <div class="row">
-                <!-- <div class="col-lg-10"> -->
-                <table class="table table-borderless">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Father Name</th>
-                      <th>DOB</th>
-                      <th>Phone</th>
-                      <th>Email</th>
-                      <th>Address</th>
-                      <th>Degree</th>
-                      <th>Clg Name</th>
-                      <th>Cource Name</th>
-                      <th>Cource Duration</th>
-                      <th>Batch Timing</th>
-                      <th>Joining Date</th>
-                      <th>Total Amount</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                    </tr>
-                    <tr>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                    </tr>
-                    <tr>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                    </tr>
-                    <tr>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                      <td>lorem</td>
-                    </tr>
-                  </tbody>
-                 </table>
-                <!-- </div> -->
-               </div>
+          <div class="row p-3 ">
+           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  p-1">
+            <div class="box6 p-3">
+              <span class="headingName">Search By Filter</span><br>
+              <select name="filter" id="filter">
+                <option value=""></option>
+                <option value="name" onchange="namesearch()">Name</option>
+                <option value="course">Course</option>
+                <option value="date">Date</option>
+              </select>
+              <div class="image" id="image">
+                <img src="../images/wait.jpg" height="100px" width="100px">
+              </div>
+              <div class="name">
+                <input type="text" placeholder="Enter Name">
+              </div>
+              <div class="course">
+                <input type="text" placeholder="Enter Course">
+              </div>
+              <div class="date">
+                <input type="date"><input type="date">
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-3 box">
+           </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-1 box">
               <div class="box5 p-3">
-                <h5 class="headingName"  >Cource Details</h5>
+                <h5 class="headingName">Cource Details</h5>
                   <div class="col-xl-12 mt-3 ">
                     <i class="fa-solid fa-code"></i>
                     <span>Mern</span>
@@ -373,10 +306,107 @@
                 
               </div>
             </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-3 " >
+                <div class="box4 p-3">
+                  <span class="headingName">Student Details</span>
+                 <div class="row">
+                  <!-- <div class="col-lg-10"> -->
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>DOB</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Degree</th>
+                        <th>Clg Name</th>
+                        <th>Cource Name</th>
+                        <th>Cource Duration</th>
+                        <th>Batch Timing</th>
+                        <th>Joining Date</th>
+                        <th>Total Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      </tr>
+                    </tbody>
+                   </table>
+                  <!-- </div> -->
+                 </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+        function namesearch(){
+          document.getElementById("image").style.visibility="hidden";
+        }
+    </script>
 
     <!-- Third party js libraries -->
     <script src="../js/bootstrap.min.js"></script>
