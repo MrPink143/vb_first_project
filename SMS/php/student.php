@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['submit'])) {
 
-         $student_id=strtoupper($_POST['student_id']);
+        //  $student_id=strtoupper($_POST['student_id']);
         $uname=strtoupper($_POST['StudentName']);
         $father=strtoupper($_POST['FatherName']);
         $email=strtoupper($_POST['EmailId']);
@@ -65,6 +65,10 @@ if($d==1){
 }
 elseif(file_exists($target_file)){
     echo "this file aleady exist";
+}
+elseif(strlen($number)<10 AND strlen($number)>10){
+  echo "only allow 10 digits number";
+
 }
 
 elseif($imageFileType !=="jpg" && $imageFileType !== "jpeg"){
