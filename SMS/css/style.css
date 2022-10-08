@@ -22,7 +22,7 @@ body {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   height: auto;
-  width:1px;
+  width:3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -494,7 +494,9 @@ i {
   position:absolute;
   line-height: 1.5;
   font-size:15px;
-  background-color: rgb(112, 7, 112);
+  /* background-image: linear-gradient(310deg,#fb6340,#fbb140); */
+
+  /* background-color: #f39c12; */
   height:40px;
   width:40px;
   border-radius:40%;
