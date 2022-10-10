@@ -24,7 +24,6 @@
     />
     <!-- Third party css libraries -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-   
   </head>
   <body >
     <div class="container-fluid">
@@ -229,15 +228,15 @@
               <span class="headingName">Search By Filter</span><br>
               <select name="filter" id="filter">
                 <option value=""></option>
-                <option value="name" onchange="namesearch()">Name</option>
+                <option value="name">Name</option>
                 <option value="course">Course</option>
                 <option value="date">Date</option>
               </select>
               <div class="image" id="image">
-                <img src="../images/wait.jpg" height="100px" width="100px">
+                <img src="../images/wait.jpg"  height="100px" width="100px">
               </div>
               <div class="name">
-                <input type="text" placeholder="Enter Name">
+                <input type="text" id="name" placeholder="Enter Name">
               </div>
               <div class="course">
                 <input type="text" placeholder="Enter Course">
@@ -391,6 +390,21 @@
                         <td>lorem</td>
                         <td>lorem</td>
                       </tr>
+                      <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      </tr>
                     </tbody>
                    </table>
                   <!-- </div> -->
@@ -402,10 +416,8 @@
         </div>
       </div>
     </div>
-    <script>
-        function namesearch(){
-          document.getElementById("image").style.visibility="hidden";
-        }
+    <script src="../js/index.js">
+        
     </script>
 
     <!-- Third party js libraries -->

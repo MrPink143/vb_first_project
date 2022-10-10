@@ -94,6 +94,20 @@ function phoneNumValidation() {
   }
 
 
+  function namesearch(){
+  // var temp = 0;
+  //       if (temp == 0) {
+  //         document.getElementsByClassName("name").style.display="none";
+  //     temp = 1;
+  //   } 
+          alert("hui buddy...");
+
+    // else if (temp == 1) {
+    //   document.getElementById("nav").style.visibility = "hidden";
+    // }
+
+    document.getElementsByClassName("name").style.display="none";
+  }
 
 
   // var temp = 0;
@@ -107,3 +121,6 @@ function phoneNumValidation() {
   //     temp = 0;
   //   }
   // }
+
+
+ 
