@@ -30,7 +30,7 @@
       <div class="row">
         <!-- Side navbar -->
         <div
-          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block vh-100 side-bar"
+          class="col-lg-2 d-none d-sm-none d-xs-block d-md-none d-lg-block vh-150 side-bar"
           id="nav"
           style="padding: 0"
         >
@@ -222,26 +222,30 @@
               </div>
             </div>
           </div>
-          <div class="row p-3 ">
+          <div class="row p-3 pt-lg-0">
            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  p-1">
             <div class="box6 p-3">
               <span class="headingName">Search By Filter</span><br>
-              <select name="filter" id="filter">
-                <option value=""></option>
-                <option value="name">Name</option>
-                <option value="course">Course</option>
+              <select name="filter" class="selectFilter my-2 ps-2" id="selectFilter">
+                <option value="selectOption">Select Option</option>
+                <option value="studentName">Name</option>
+                <option value="courseName">Course</option>
                 <option value="date">Date</option>
               </select>
-              <div class="image" id="image">
-                <img src="../images/wait.jpg"  height="100px" width="100px">
+              <div class="filterImage" id="introDiv">
+                <img src="../images/filterIntro.webp"  class="img-fluid" height="auto" width="40%">
+                <p class="text-secondary">Search by filter option</p>
               </div>
-              <div class="name">
-                <input type="text" id="name" placeholder="Enter Name">
+              <div class="filterName" id="nameDiv">
+                <span class="my-2">Search by Name</span>
+                <input type="text" id="name" placeholder="ENTER STUDENT NAME">
+                <button class="btn">submit</button>
+                <img src="../images//filterLoading.gif" alt="" class="img-fluid" width="50%" height="auto">
               </div>
-              <div class="course">
-                <input type="text" placeholder="Enter Course">
+              <div class="filterCourse" id="courseDiv">
+                <input type="text" placeholder="Enter Course Name">
               </div>
-              <div class="date">
+              <div class="filterDate" id="dateDiv">
                 <input type="date"><input type="date">
               </div>
             </div>
